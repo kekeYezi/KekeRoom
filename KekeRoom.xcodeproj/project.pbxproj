@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		987452DD02FACED9B6B6A8A9 /* Pods_KekeRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86BB9CEA3D6F4E656B68536 /* Pods_KekeRoom.framework */; };
 		A025ABC01FB0A60C0064D0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */; };
-		A025ABC21FB0A60C0064D0F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABC11FB0A60C0064D0F3 /* ViewController.swift */; };
 		A025ABC51FB0A60C0064D0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC31FB0A60C0064D0F3 /* Main.storyboard */; };
 		A025ABC71FB0A60C0064D0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */; };
 		A025ABCA1FB0A60C0064D0F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC81FB0A60C0064D0F3 /* LaunchScreen.storyboard */; };
+		A025ABD21FB1E5FF0064D0F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */; };
+		A025ABD41FB1F0A20064D0F3 /* KKCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80A9546F15D6913C4B4A74B2 /* Pods-KekeRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KekeRoom.release.xcconfig"; path = "Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom.release.xcconfig"; sourceTree = "<group>"; };
 		A025ABBC1FB0A60C0064D0F3 /* KekeRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KekeRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A025ABC11FB0A60C0064D0F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A025ABC41FB0A60C0064D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A025ABC91FB0A60C0064D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A025ABCB1FB0A60C0064D0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCircleProgressView.swift; sourceTree = "<group>"; };
+		C86BB9CEA3D6F4E656B68536 /* Pods_KekeRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KekeRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC19452A7AB4DE88611D2999 /* Pods-KekeRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KekeRoom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987452DD02FACED9B6B6A8A9 /* Pods_KekeRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45168CF7B19165B984ACA895 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC19452A7AB4DE88611D2999 /* Pods-KekeRoom.debug.xcconfig */,
+				80A9546F15D6913C4B4A74B2 /* Pods-KekeRoom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84FB98D380AF14227432DE33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86BB9CEA3D6F4E656B68536 /* Pods_KekeRoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A025ABB31FB0A60C0064D0F3 = {
 			isa = PBXGroup;
 			children = (
 				A025ABBE1FB0A60C0064D0F3 /* KekeRoom */,
 				A025ABBD1FB0A60C0064D0F3 /* Products */,
+				45168CF7B19165B984ACA895 /* Pods */,
+				84FB98D380AF14227432DE33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */,
-				A025ABC11FB0A60C0064D0F3 /* ViewController.swift */,
+				A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */,
+				A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */,
 				A025ABC31FB0A60C0064D0F3 /* Main.storyboard */,
 				A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */,
 				A025ABC81FB0A60C0064D0F3 /* LaunchScreen.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A025ABCE1FB0A60C0064D0F3 /* Build configuration list for PBXNativeTarget "KekeRoom" */;
 			buildPhases = (
+				1F9D0A4C70F6C80966C2CE2A /* [CP] Check Pods Manifest.lock */,
 				A025ABB81FB0A60C0064D0F3 /* Sources */,
 				A025ABB91FB0A60C0064D0F3 /* Frameworks */,
 				A025ABBA1FB0A60C0064D0F3 /* Resources */,
+				43B9D3B850853805A6248265 /* [CP] Embed Pods Frameworks */,
+				A324280F2DB0FB7B48477BAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +161,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F9D0A4C70F6C80966C2CE2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KekeRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B9D3B850853805A6248265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A324280F2DB0FB7B48477BAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A025ABB81FB0A60C0064D0F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A025ABC21FB0A60C0064D0F3 /* ViewController.swift in Sources */,
 				A025ABC01FB0A60C0064D0F3 /* AppDelegate.swift in Sources */,
+				A025ABD41FB1F0A20064D0F3 /* KKCircleProgressView.swift in Sources */,
+				A025ABD21FB1E5FF0064D0F3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +357,7 @@
 		};
 		A025ABCF1FB0A60C0064D0F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC19452A7AB4DE88611D2999 /* Pods-KekeRoom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +373,7 @@
 		};
 		A025ABD01FB0A60C0064D0F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A9546F15D6913C4B4A74B2 /* Pods-KekeRoom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
