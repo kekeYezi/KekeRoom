@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class HomeViewController: UIViewController {
+class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     lazy var headImageView = UIImageView.init()
     
     lazy var labelsBgView = UIView.init()
@@ -18,6 +18,8 @@ class HomeViewController: UIViewController {
     lazy var currentExpendLabel = UILabel.init()
     lazy var currentIncomeAccountLabel = UILabel.init()
     lazy var currentExpendAccountLabel = UILabel.init()
+    
+    lazy var mainTableView = UITableView.init(frame: CGRect.init(), style: .plain)
     
     lazy var circelView  = KKCircleProgressView.init()
     
@@ -27,7 +29,17 @@ class HomeViewController: UIViewController {
         self.addHeadImageView()
         self.addAccoutLabels()
         self.addCircelView()
+        self.addTableView()
         
+        let lineLabel = UILabel.init()
+        self.view.addSubview(lineLabel)
+        lineLabel.backgroundColor = UIColor(red:0.80, green:0.80, blue:0.80, alpha:1.00)
+        lineLabel.snp.makeConstraints { (make) in
+            make.width.equalTo(0.5)
+            make.top.equalTo(circelView.snp.bottom)
+            make.bottom.equalTo(mainTableView.snp.top)
+            make.centerX.equalTo(circelView.snp.centerX)
+        }
     }
     
     // MARK: - UI
@@ -38,6 +50,16 @@ class HomeViewController: UIViewController {
             make.top.left.right.equalTo(0)
             make.height.equalTo(155)
         }
+        
+        let labelName = UILabel.init()
+        self.view.addSubview(labelName)
+        
+        labelName.text = "叶斌&胡晓萍的可可小屋"
+        labelName.textColor = UIColor.white
+        labelName.font = UIFont.systemFont(ofSize: 25)
+        labelName.snp.makeConstraints { (make) in
+            make.left.top.equalTo(20)
+        };
     }
     
     func addAccoutLabels() {
@@ -100,7 +122,67 @@ class HomeViewController: UIViewController {
         
         circelView.value = 30
         circelView.maximumValue = 80;
+        circelView.tapBlock = { () in
+            self.present(KKCalculateViewController(), animated: true, completion: nil)
+        }
     
+    }
+    
+    func addTableView () {
+        self.view.addSubview(mainTableView)
+        mainTableView.separatorStyle = .none
+        mainTableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        mainTableView.delegate = self
+        mainTableView.dataSource = self
+        mainTableView.snp.makeConstraints { (make) in
+            make.top.equalTo(labelsBgView.snp.bottom)
+            make.left.right.bottom.equalTo(0)
+        }
+        
+    }
+    
+    // MARK: - TableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Int(arc4random()%6) + 1 
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let indentifier = "KKHomeTableViewCell"
+        
+        var cell : KKHomeTableViewCell! = tableView.dequeueReusableCell(withIdentifier: (indentifier)) as? KKHomeTableViewCell
+        
+        if cell == nil {
+            cell = KKHomeTableViewCell.init(style: .default, reuseIdentifier: indentifier)
+        }
+    
+        cell.contentLabel.text = "用餐"
+        cell.priceLabel.text = "7.50"
+        cell.selectionStyle = .none
+    
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = HomeTableViewSectionView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.height, height: 20))
+        view.titlePriceLabel.text = "572.5"
+        view.titleDateLabel.text = "11日"
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

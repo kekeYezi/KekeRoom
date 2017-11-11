@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 class KKCircleProgressView: UIView {
+    lazy var tapseg : UITapGestureRecognizer = UITapGestureRecognizer.init()
     lazy var ccImageView = UIImageView.init()
+    var tapBlock : (()->())?
+
     
     var value: CGFloat = 0 {
         didSet {
@@ -38,11 +41,6 @@ class KKCircleProgressView: UIView {
         //弧度终点
         let endAngle = CGFloat(((self.value / self.maximumValue) * 360.0 - 90.0) ) * CGFloat(Double.pi) / 180.0
         
-//        let ctx = UIGraphicsGetCurrentContext()
-//        ctx?.setStrokeColor(UIColor.gray.cgColor)
-//        ctx?.setLineWidth(3)
-//        ctx?.addArc(tangent1End: CGPoint.init(x: 50, y: 50), tangent2End: CGPoint.init(x: 10, y: 100), radius: 10)
-//        ctx?.strokePath()
         //创建一个画布
         let context = UIGraphicsGetCurrentContext()
         
@@ -86,9 +84,24 @@ class KKCircleProgressView: UIView {
         let maskLayer = CAShapeLayer.init()
         maskLayer.path = UIBezierPath.init(roundedRect: frame, cornerRadius: frame.size.width / 2).cgPath
         self.layer.mask = maskLayer
+
+        self.addGestureRecognizer(tapseg)
+        tapseg.addTarget(self, action: #selector(tap))
         
-        
-//        self.layer.cornerRadius = self.bounds.size.height / 2;
-//        self.layer.masksToBounds = true;
     }
+    
+    @objc private func tap () {
+        print("1")
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .autoreverse, animations: {
+            self.ccImageView.transform = CGAffineTransform.init(rotationAngle: CGFloat((Double.pi/4)*(1)))
+        }, completion: {(need) in
+            self.ccImageView.transform = CGAffineTransform.init(rotationAngle: CGFloat((Double.pi/4)*(0)))
+        })
+
+        if let block = tapBlock {
+            block()
+        }
+        
+    }
+    
 }

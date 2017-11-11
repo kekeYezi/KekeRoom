@@ -12,8 +12,10 @@
 		A025ABC51FB0A60C0064D0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC31FB0A60C0064D0F3 /* Main.storyboard */; };
 		A025ABC71FB0A60C0064D0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */; };
 		A025ABCA1FB0A60C0064D0F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC81FB0A60C0064D0F3 /* LaunchScreen.storyboard */; };
-		A025ABD21FB1E5FF0064D0F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */; };
 		A025ABD41FB1F0A20064D0F3 /* KKCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */; };
+		A03909301FB68ED600FCB825 /* KKHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A039092F1FB68ED600FCB825 /* KKHomeTableViewCell.swift */; };
+		A0A168AF1FB6B7E100785B59 /* KKCalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A168AE1FB6B7E100785B59 /* KKCalculateViewController.swift */; };
+		A0A168B11FB6B86700785B59 /* KKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A168B01FB6B86700785B59 /* KKHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A025ABC91FB0A60C0064D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A025ABCB1FB0A60C0064D0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCircleProgressView.swift; sourceTree = "<group>"; };
+		A039092F1FB68ED600FCB825 /* KKHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHomeTableViewCell.swift; sourceTree = "<group>"; };
+		A0A168AE1FB6B7E100785B59 /* KKCalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCalculateViewController.swift; sourceTree = "<group>"; };
+		A0A168B01FB6B86700785B59 /* KKHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKHomeViewController.swift; sourceTree = "<group>"; };
 		C86BB9CEA3D6F4E656B68536 /* Pods_KekeRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KekeRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC19452A7AB4DE88611D2999 /* Pods-KekeRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KekeRoom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */,
-				A025ABD11FB1E5FF0064D0F3 /* HomeViewController.swift */,
+				A0A168B01FB6B86700785B59 /* KKHomeViewController.swift */,
+				A0A168AE1FB6B7E100785B59 /* KKCalculateViewController.swift */,
+				A039092F1FB68ED600FCB825 /* KKHomeTableViewCell.swift */,
 				A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */,
 				A025ABC31FB0A60C0064D0F3 /* Main.storyboard */,
 				A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */,
@@ -222,7 +228,9 @@
 			files = (
 				A025ABC01FB0A60C0064D0F3 /* AppDelegate.swift in Sources */,
 				A025ABD41FB1F0A20064D0F3 /* KKCircleProgressView.swift in Sources */,
-				A025ABD21FB1E5FF0064D0F3 /* HomeViewController.swift in Sources */,
+				A03909301FB68ED600FCB825 /* KKHomeTableViewCell.swift in Sources */,
+				A0A168B11FB6B86700785B59 /* KKHomeViewController.swift in Sources */,
+				A0A168AF1FB6B7E100785B59 /* KKCalculateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
