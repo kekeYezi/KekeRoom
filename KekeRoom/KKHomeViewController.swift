@@ -104,7 +104,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         
         currentExpendAccountLabel.snp.makeConstraints { (make) in
             make.top.equalTo(currentExpendLabel.snp.bottom).offset(fontSize)
-            make.left.equalTo(currentExpendLabel.snp.left)
+            make.right.equalTo(currentExpendLabel.snp.right)
         }
         currentExpendAccountLabel.font = UIFont.systemFont(ofSize: fontSize)
         currentExpendAccountLabel.text = "805.20"

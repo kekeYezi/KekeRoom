@@ -57,6 +57,15 @@ class KKCalculateViewController : UIViewController {
             make.top.equalTo(priceView.snp.bottom)
             make.height.equalTo(400)
         }
+        
+        iconsView.iconBlock = { (item) in
+            UIView.animate(withDuration: 0.5, animations: {
+                self.priceView.backgroundColor = item.iconItemColor
+                self.priceView.titlePriceLabel.text = item.iconItemLabel.text
+                self.priceView.priceIconImageView.image = item.iconItemImageView.image
+            })
+            
+        }
     }
     
     func showNoteView () {
@@ -73,6 +82,19 @@ class KKCalculateViewController : UIViewController {
         caculateView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(0)
             make.height.equalTo(280)
+        }
+        caculateView.calculateBlock = { result in
+            self.priceView.priceLabel.text = "\(result)"
+        }
+        caculateView.gerResultBlock = { result in
+            if Double(result)! <= 0 {
+                // doudong
+                print("dd")
+                self.priceView.shakePriceLabel()
+            } else {
+               self.dismiss(animated: true, completion: nil)
+            }
+            
         }
     }
 }
@@ -115,7 +137,7 @@ class KKCalculateNavView: UIView {
 }
 
 class KKShowPriceView: UIView {
-    lazy var backButton = UIButton.init()
+    lazy var priceIconImageView = UIImageView.init()
     lazy var titlePriceLabel = UILabel.init()
     lazy var priceLabel = UILabel.init()
     
@@ -123,19 +145,18 @@ class KKShowPriceView: UIView {
         super.init(frame: frame)
         
         self.backgroundColor = UIColor(red:0.69, green:0.70, blue:0.33, alpha:1.00)
-        self.addSubview(backButton)
-        backButton.snp.makeConstraints { (make) in
+        self.addSubview(priceIconImageView)
+        priceIconImageView.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.centerY.equalTo(self)
             make.width.height.equalTo(35)
         }
-        backButton.setImage(UIImage.init(named: "type_big_1"), for: .normal)
-//        backButton.addTarget(self, action: #selector(back), for: .touchUpInside)
+        priceIconImageView.image = UIImage.init(named: "type_big_1")
         
         self.addSubview(titlePriceLabel)
         titlePriceLabel.snp.makeConstraints { (make) in
             make.centerY.equalTo(self.snp.centerY)
-            make.left.equalTo(backButton.snp.right).offset(15);
+            make.left.equalTo(priceIconImageView.snp.right).offset(15);
         }
         titlePriceLabel.font = UIFont.systemFont(ofSize: 15)
         titlePriceLabel.textColor = UIColor.white
@@ -151,29 +172,62 @@ class KKShowPriceView: UIView {
         priceLabel.text = "¥ 0.00"
     }
     
+    func shakePriceLabel () {
+        // shake animation
+        let kfa = CAKeyframeAnimation()
+        kfa.keyPath = "transform.translation.x"
+        let s = 4
+        kfa.values = [-s,0,s,0,-s,0,s,0]
+        kfa.duration = 0.4
+        kfa.repeatCount = 1
+        kfa.isRemovedOnCompletion = true
+        priceLabel.layer.add(kfa, forKey: "shake")
+        
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 }
 
 class KKCalculateIconView: UIView {
-   
+    var iconBlock : ((_:KKCalculateIconItemView) -> ())?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         let itemWidth : CGFloat = self.bounds.size.width / 6
         let itemHeight : CGFloat = 90
        
-        for i in 0..<19 {
+        for i in 0..<10 {
             let j = i % 6
             let k = i / 6
             print(j)
             print(k)
             
+            let titleAry = ["一般","用餐","零食","交通","信用卡","女士","娱乐","住房","饮料","备用"]
+            let colorsAry = [UIColor(red:0.69, green:0.70, blue:0.33, alpha:1.00),
+                             UIColor(red:0.54, green:0.67, blue:0.66, alpha:1.00),
+                             UIColor(red:0.60, green:0.47, blue:0.41, alpha:1.00),
+                             UIColor(red:0.44, green:0.51, blue:0.70, alpha:1.00),
+                             UIColor(red:0.59, green:0.73, blue:0.86, alpha:1.00),
+                             UIColor(red:0.87, green:0.56, blue:0.74, alpha:1.00),
+                             UIColor(red:0.88, green:0.58, blue:0.32, alpha:1.00),
+                             UIColor(red:0.80, green:0.73, blue:0.42, alpha:1.00),
+                             UIColor(red:0.54, green:0.42, blue:0.69, alpha:1.00),
+                             UIColor(red:0.94, green:0.52, blue:0.20, alpha:1.00)]
+            
             let item = KKCalculateIconItemView.init(frame: CGRect.init(x: CGFloat(j) * itemWidth, y: CGFloat(k) * itemHeight, width: itemWidth, height: itemHeight))
             self.addSubview(item)
-            item.iconItemImageView.image = UIImage.init(named: "type_big_\(i)")
-            item.iconItemLabel.text = "一般"
+            item.iconItemImageView.image = UIImage.init(named: "type_big_\(i+1)")
+            item.iconItemLabel.text = titleAry[i]
+            item.iconItemColor = colorsAry[i]
+            item.tapBlock = {
+                if self.iconBlock != nil {
+                    self.iconBlock!(item)
+                }
+            }
+            
         }
     }
 
@@ -185,6 +239,9 @@ class KKCalculateIconView: UIView {
 class KKCalculateIconItemView: UIView {
     lazy var iconItemImageView = UIImageView.init()
     lazy var iconItemLabel = UILabel.init()
+    lazy var iconItemColor = UIColor.white
+    lazy var tapges = UITapGestureRecognizer.init(target: self, action: #selector(tap))
+    var tapBlock : (() -> ())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -206,13 +263,19 @@ class KKCalculateIconItemView: UIView {
             make.top.equalTo(iconItemImageView.snp.bottom).offset(5)
         }
         
+       self.addGestureRecognizer(tapges)
+        
+    }
+    
+    @objc private func tap () {
+        if tapBlock != nil {
+            tapBlock!()
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
-    
 }
 
 
@@ -230,7 +293,13 @@ class KKCalculateNoteView: UIView {
             make.left.equalTo(35)
             make.top.bottom.equalTo(0)
         }
-        dateLabel.text = "2017\n今天"
+        
+        let formatter = DateFormatter.init()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let currentDate = Date()
+        let dateString = formatter.string(from: currentDate as Date)
+        dateLabel.text = dateString
+        
         dateLabel.font = UIFont.systemFont(ofSize: 15)
         dateLabel.textColor = UIColor(red:0.73, green:0.73, blue:0.73, alpha:1.00)
         
@@ -256,6 +325,18 @@ class KKCalculateNoteView: UIView {
 }
 
 class KKCalculateView: UIView {
+    var calculateBlock : ((_:String) -> ())?
+    var gerResultBlock : ((_:String) -> ())?
+    let moneyStr = "¥ "
+    var resultStringX :String = "0"
+    var resultStringY :String = "0"
+    var controltX = true
+    var ifAdd = true
+    var complete = false
+    var lastResultStringX :String = "0"
+    var lastResultStringY :String = "0"
+    
+    var okbtn : UIButton = UIButton.init()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -272,8 +353,8 @@ class KKCalculateView: UIView {
                 
                 self.addSubview(btn)
                 btn.setTitle(strings[4*i + j], for: .normal)
-                btn.setTitleColor(UIColor(red:0.00, green:0.00, blue:0.00, alpha:1.00), for: .normal)
-                btn.addTarget(self, action: #selector(ok), for: .touchUpInside)
+                btn.setTitleColor(UIColor(red:0.55, green:0.55, blue:0.55, alpha:1.00), for: .normal)
+                btn.addTarget(self, action: #selector(calculate(_:)), for: .touchUpInside)
                 btn.titleLabel?.font = UIFont.systemFont(ofSize: 29)
                 
             }
@@ -303,17 +384,121 @@ class KKCalculateView: UIView {
             })
         }
         
-        let okbtn = UIButton.init(frame: CGRect.init(x: itemwidth  * CGFloat(3), y: itemheight * CGFloat(2) + 1, width: itemwidth, height: itemheight * CGFloat(2)))
+        okbtn.frame = CGRect.init(x: itemwidth  * CGFloat(3), y: itemheight * CGFloat(2) + 1, width: itemwidth, height: itemheight * CGFloat(2))
         self.addSubview(okbtn)
         okbtn.backgroundColor = UIColor(red:0.92, green:0.92, blue:0.92, alpha:1.00)
         okbtn.titleLabel?.font = UIFont.systemFont(ofSize: 33)
         okbtn.setTitle("ok", for: .normal)
-        okbtn.setTitleColor(UIColor(red:0.00, green:0.00, blue:0.00, alpha:1.00), for: .normal)
-        okbtn.addTarget(self, action: #selector(ok), for: .touchUpInside)
+        okbtn.setTitleColor(UIColor(red:0.55, green:0.55, blue:0.55, alpha:1.00), for: .normal)
+        okbtn.addTarget(self, action:#selector(calculate(_:)), for: .touchUpInside)
     }
     
-    @objc private func ok () {
-        print("ok")
+    @objc private func calculate (_ btn : UIButton) {
+        
+        let text = btn.titleLabel?.text!
+        guard text != "ok" else {
+            if gerResultBlock != nil {
+                gerResultBlock!(self.getResultString().replacingOccurrences(of: moneyStr, with: ""))
+            }
+            return
+        }
+        
+        guard text != "." else {
+            if complete {
+                self.reset()
+            }
+            controltX = false
+            return
+        }
+        
+        guard text != "+" && text != "-"else {
+            complete = false
+            lastResultStringX = resultStringX
+            lastResultStringY = resultStringY
+            resultStringX = "0"
+            resultStringY = "0"
+            controltX = true
+            if text == "+" {
+                ifAdd = true
+            } else {
+                ifAdd = false
+            }
+            okbtn.setTitle("=", for: .normal)
+            return
+        }
+        
+        if text == "1" || text == "2" ||
+           text == "3" || text == "4" ||
+           text == "5" || text == "6" ||
+           text == "7" || text == "8" ||
+           text == "9" || text == "0" {
+            
+            if complete {
+                self.reset()
+            }
+            
+            if controltX == true {
+                if resultStringX == "0" {
+                    resultStringX = text!
+                } else {
+                    resultStringX = resultStringX + text!
+                }
+            } else {
+                if resultStringY == "0" {
+                    resultStringY = text!
+                } else {
+                    if resultStringY.characters.count == 2 {
+                        // 不能再添加   抖动动画提示
+                        print("抖动")
+                    } else {
+                        resultStringY = resultStringY + text!
+                    }
+                }
+            }
+            
+        } else if (text == "清零") {
+            self.reset()
+        } else if (text == "=") {
+            var result : Double = 0
+            var resultX : String = "0"
+            var resultY : String = "0"
+            let lastcontet : Double = Double(lastResultStringX + "." + lastResultStringY)!
+            let currentcontent : Double = Double(resultStringX + "." + resultStringY)!
+            if ifAdd {
+                result = lastcontet + currentcontent
+            } else {
+                result = lastcontet - currentcontent
+            }
+            let tresult =  NSString.init(format: "%.2f", result)
+            let ary = String(tresult).components(separatedBy: ".")
+            resultX = ary[0]
+            resultY = ary[1]
+            
+            resultStringX = resultX
+            resultStringY = resultY
+            
+            okbtn.setTitle("ok", for: .normal)
+            complete = true
+        }
+        
+        if calculateBlock != nil {
+            calculateBlock!(self.getResultString())
+        }
+    }
+    
+    func getResultString () -> String {
+        let sry = resultStringY.characters.count == 1 ? resultStringY + "0" : resultStringY
+        return (moneyStr + resultStringX + "." + sry)
+    }
+    
+    func reset () {
+        lastResultStringX = "0"
+        lastResultStringX = "0"
+        resultStringX = "0"
+        resultStringY = "0"
+        controltX = true
+        ifAdd = true
+        complete = false
     }
 
     required init?(coder aDecoder: NSCoder) {
