@@ -54,7 +54,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         let labelName = UILabel.init()
         self.view.addSubview(labelName)
         
-        labelName.text = "叶斌&胡晓萍的可可小屋"
+        labelName.text = "可可小屋"
         labelName.textColor = UIColor.white
         labelName.font = UIFont.systemFont(ofSize: 25)
         labelName.snp.makeConstraints { (make) in
