@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import SnapKit
+import Realm
+import RealmSwift
 
 class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     lazy var headImageView = UIImageView.init()
@@ -18,6 +20,8 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     lazy var currentExpendLabel = UILabel.init()
     lazy var currentIncomeAccountLabel = UILabel.init()
     lazy var currentExpendAccountLabel = UILabel.init()
+    var recordDataAry:[[ChargeRecord]] = []
+    var totalPrice:Double = 0
     
     lazy var mainTableView = UITableView.init(frame: CGRect.init(), style: .plain)
     
@@ -40,6 +44,57 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
             make.bottom.equalTo(mainTableView.snp.top)
             make.centerX.equalTo(circelView.snp.centerX)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.readRealmData()
+        self.mainTableView.reloadData()
+        self.reloadUI()
+    }
+    
+    func readRealmData () {
+        totalPrice = 0;
+        
+        let realm = try! Realm()
+        let puppies = realm.objects(ChargeRecord.self).sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
+            
+            let timeInterval1:TimeInterval = model1.date.timeIntervalSince1970
+            let timeStamp1 = Int(timeInterval1)
+            
+            let timeInterval2:TimeInterval = model2.date.timeIntervalSince1970
+            let timeStamp2 = Int(timeInterval2)
+            
+            return timeStamp1 > timeStamp2
+        })
+        
+        recordDataAry.removeAll()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY-MM-dd"
+        
+        var lastString = ""
+        for model:ChargeRecord in puppies {
+            let string = formatter.string(from: model.date as Date)
+            if string == lastString {
+                var ary:[ChargeRecord] = recordDataAry[recordDataAry.count - 1]
+                ary.append(model)
+                totalPrice = totalPrice + model.price
+                let countt:Int = recordDataAry.count - 1
+                recordDataAry[countt] = ary
+                print(ary)
+            } else {
+                lastString = string
+                var ary:[ChargeRecord] = []
+                ary.append(model)
+                totalPrice = totalPrice + model.price
+                recordDataAry.append(ary)
+            }
+        }
+    }
+    
+    func reloadUI () {
+        currentExpendAccountLabel.text = "\(totalPrice)"
     }
     
     // MARK: - UI
@@ -107,7 +162,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
             make.right.equalTo(currentExpendLabel.snp.right)
         }
         currentExpendAccountLabel.font = UIFont.systemFont(ofSize: fontSize)
-        currentExpendAccountLabel.text = "805.20"
+        currentExpendAccountLabel.text = "\(totalPrice)"
         currentExpendAccountLabel.textColor = UIColor.gray
     }
     
@@ -123,7 +178,9 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         circelView.value = 30
         circelView.maximumValue = 80;
         circelView.tapBlock = { () in
-            self.present(KKCalculateViewController(), animated: true, completion: nil)
+            self.present(KKCalculateViewController(), animated: true, completion: {
+                print("1")
+            })
         }
     
     }
@@ -147,11 +204,11 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Int(arc4random()%6) + 1 
+        return recordDataAry[section].count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return recordDataAry.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -163,8 +220,13 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
             cell = KKHomeTableViewCell.init(style: .default, reuseIdentifier: indentifier)
         }
     
-        cell.contentLabel.text = "用餐"
-        cell.priceLabel.text = "7.50"
+        let a = recordDataAry[indexPath.section]
+        
+        let record:ChargeRecord = a[indexPath.row]
+        cell.contentLabel.text = record.sumary
+        cell.priceLabel.text = "\(record.price)"
+        cell.iconImageView.image = UIImage.init(named: "type_big_\(record.imageTag)")
+        
         cell.selectionStyle = .none
     
         return cell
@@ -176,8 +238,20 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = HomeTableViewSectionView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.height, height: 20))
-        view.titlePriceLabel.text = "572.5"
-        view.titleDateLabel.text = "11日"
+        var prices:Double = 0
+        var dateStirng:String = ""
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd日"
+        
+        for ary:[ChargeRecord] in recordDataAry {
+            for model in ary {
+                prices = prices + model.price
+                dateStirng = formatter.string(from: model.date)
+            }
+        }
+    
+        view.titlePriceLabel.text = "\(prices)"
+        view.titleDateLabel.text = dateStirng
         return view
     }
     

@@ -13,7 +13,6 @@ class KKCircleProgressView: UIView {
     lazy var tapseg : UITapGestureRecognizer = UITapGestureRecognizer.init()
     lazy var ccImageView = UIImageView.init()
     var tapBlock : (()->())?
-
     
     var value: CGFloat = 0 {
         didSet {
@@ -91,7 +90,6 @@ class KKCircleProgressView: UIView {
     }
     
     @objc private func tap () {
-        print("1")
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .autoreverse, animations: {
             self.ccImageView.transform = CGAffineTransform.init(rotationAngle: CGFloat((Double.pi/4)*(1)))
         }, completion: {(need) in

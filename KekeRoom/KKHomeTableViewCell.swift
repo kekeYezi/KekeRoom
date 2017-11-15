@@ -100,9 +100,6 @@ class HomeTableViewSectionView: UIView {
         titleDateLabel.font = UIFont.systemFont(ofSize: 12)
         titlePriceLabel.textColor = UIColor(red:0.66, green:0.66, blue:0.66, alpha:1.00)
         titleDateLabel.textColor  = UIColor(red:0.66, green:0.66, blue:0.66, alpha:1.00)
-        
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

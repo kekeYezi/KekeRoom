@@ -8,6 +8,9 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import Realm
+import RealmSwift
 
 class KKCalculateViewController : UIViewController {
     lazy var titleView = KKCalculateNavView.init()
@@ -63,6 +66,7 @@ class KKCalculateViewController : UIViewController {
                 self.priceView.backgroundColor = item.iconItemColor
                 self.priceView.titlePriceLabel.text = item.iconItemLabel.text
                 self.priceView.priceIconImageView.image = item.iconItemImageView.image
+                self.priceView.imageTag = item.imageTag
             })
             
         }
@@ -92,12 +96,27 @@ class KKCalculateViewController : UIViewController {
                 print("dd")
                 self.priceView.shakePriceLabel()
             } else {
+                let record = ChargeRecord()
+                record.price = Double(result)!
+                record.sumary = self.priceView.titlePriceLabel.text!
+                record.imageTag = self.priceView.imageTag
+                
+                self.addDataIntoTable(record: record)
                self.dismiss(animated: true, completion: nil)
             }
             
         }
     }
+        
+    func addDataIntoTable (record:ChargeRecord) {
+        let realm = try! Realm()
+
+        try! realm.write {
+            realm.add(record)
+        }
+    }
 }
+
 
 
 class KKCalculateNavView: UIView {
@@ -140,6 +159,7 @@ class KKShowPriceView: UIView {
     lazy var priceIconImageView = UIImageView.init()
     lazy var titlePriceLabel = UILabel.init()
     lazy var priceLabel = UILabel.init()
+    lazy var imageTag:String = "1"
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -222,6 +242,7 @@ class KKCalculateIconView: UIView {
             item.iconItemImageView.image = UIImage.init(named: "type_big_\(i+1)")
             item.iconItemLabel.text = titleAry[i]
             item.iconItemColor = colorsAry[i]
+            item.imageTag = "\(i+1)"
             item.tapBlock = {
                 if self.iconBlock != nil {
                     self.iconBlock!(item)
@@ -240,6 +261,8 @@ class KKCalculateIconItemView: UIView {
     lazy var iconItemImageView = UIImageView.init()
     lazy var iconItemLabel = UILabel.init()
     lazy var iconItemColor = UIColor.white
+    lazy var imageTag:String = "1"
+    
     lazy var tapges = UITapGestureRecognizer.init(target: self, action: #selector(tap))
     var tapBlock : (() -> ())?
     

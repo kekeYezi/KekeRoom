@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		987452DD02FACED9B6B6A8A9 /* Pods_KekeRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86BB9CEA3D6F4E656B68536 /* Pods_KekeRoom.framework */; };
+		A01E126A1FBC81A600865FF4 /* ChargeRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01E12691FBC81A600865FF4 /* ChargeRecord.swift */; };
 		A025ABC01FB0A60C0064D0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */; };
 		A025ABC51FB0A60C0064D0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC31FB0A60C0064D0F3 /* Main.storyboard */; };
 		A025ABC71FB0A60C0064D0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A025ABC61FB0A60C0064D0F3 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		80A9546F15D6913C4B4A74B2 /* Pods-KekeRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KekeRoom.release.xcconfig"; path = "Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom.release.xcconfig"; sourceTree = "<group>"; };
+		A01E12691FBC81A600865FF4 /* ChargeRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChargeRecord.swift; path = Assets.xcassets/ChargeRecord.swift; sourceTree = "<group>"; };
 		A025ABBC1FB0A60C0064D0F3 /* KekeRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KekeRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A025ABC41FB0A60C0064D0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				A025ABBF1FB0A60C0064D0F3 /* AppDelegate.swift */,
 				A0A168B01FB6B86700785B59 /* KKHomeViewController.swift */,
+				A01E12691FBC81A600865FF4 /* ChargeRecord.swift */,
 				A0A168AE1FB6B7E100785B59 /* KKCalculateViewController.swift */,
 				A039092F1FB68ED600FCB825 /* KKHomeTableViewCell.swift */,
 				A025ABD31FB1F0A20064D0F3 /* KKCircleProgressView.swift */,
@@ -193,10 +196,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KekeRoom/Pods-KekeRoom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +239,7 @@
 			files = (
 				A025ABC01FB0A60C0064D0F3 /* AppDelegate.swift in Sources */,
 				A025ABD41FB1F0A20064D0F3 /* KKCircleProgressView.swift in Sources */,
+				A01E126A1FBC81A600865FF4 /* ChargeRecord.swift in Sources */,
 				A03909301FB68ED600FCB825 /* KKHomeTableViewCell.swift in Sources */,
 				A0A168B11FB6B86700785B59 /* KKHomeViewController.swift in Sources */,
 				A0A168AF1FB6B7E100785B59 /* KKCalculateViewController.swift in Sources */,
