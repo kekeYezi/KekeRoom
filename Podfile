@@ -10,6 +10,6 @@ target 'KekeRoom' do
   pod 'RxCocoa'
   pod 'RealmSwift'
 #  pod 'Realm'
-  # Pods for KekeRoom
+  pod 'LeanCloud'
 
 end

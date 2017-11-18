@@ -11,6 +11,7 @@ import UIKit
 import SnapKit
 import Realm
 import RealmSwift
+import LeanCloud
 
 class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
     lazy var headImageView = UIImageView.init()
@@ -49,14 +50,51 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.readRealmData()
-        self.mainTableView.reloadData()
-        self.reloadUI()
+        self.readNetData()
+        print("viewWillAppear")
     }
     
-    func readRealmData () {
+    // MARK: - 读取数据相关逻辑
+    // 从LC 服务端读取数据
+    func readNetData () {
         totalPrice = 0;
         
+        let query = LCQuery(className: "ChargeRecord")
+        query.find { result in
+            switch result {
+            case .success(let objects):
+                var pup:[ChargeRecord] = []
+                for lcm:LCObject in objects {
+                    let a = ChargeRecord().getLCModel(object: lcm)
+                    pup.append(a)
+                }
+                
+                let pups = pup.sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
+                    let timeInterval1:TimeInterval = model1.date.timeIntervalSince1970
+                    let timeStamp1 = Int(timeInterval1)
+                    
+                    let timeInterval2:TimeInterval = model2.date.timeIntervalSince1970
+                    let timeStamp2 = Int(timeInterval2)
+
+                    return timeStamp1 > timeStamp2
+                })
+
+                self.recordDataAry.removeAll()
+                self.getTotalAry(puppies: pups)
+                
+                self.reloadUI()
+                
+            break // 查询成功
+            case .failure(let error):
+                print(error)
+                self.readLocalRealm()
+                self.reloadUI()
+            }
+        }
+    }
+    
+    // 本地数据库读取
+    func readLocalRealm () {
         let realm = try! Realm()
         let puppies = realm.objects(ChargeRecord.self).sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
             
@@ -68,8 +106,15 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
             
             return timeStamp1 > timeStamp2
         })
+        self.recordDataAry.removeAll()
+        self.getTotalAry(puppies: puppies)
         
-        recordDataAry.removeAll()
+        self.reloadUI()
+        print(self.recordDataAry)
+        self.mainTableView.reloadData()
+    }
+    
+    func getTotalAry(puppies:[ChargeRecord]) {
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY-MM-dd"
         
@@ -82,7 +127,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
                 totalPrice = totalPrice + model.price
                 let countt:Int = recordDataAry.count - 1
                 recordDataAry[countt] = ary
-                print(ary)
+                //                print(ary)
             } else {
                 lastString = string
                 var ary:[ChargeRecord] = []
@@ -95,6 +140,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     
     func reloadUI () {
         currentExpendAccountLabel.text = "\(totalPrice)"
+        self.mainTableView.reloadData()
     }
     
     // MARK: - UI

@@ -101,8 +101,19 @@ class KKCalculateViewController : UIViewController {
                 record.sumary = self.priceView.titlePriceLabel.text!
                 record.imageTag = self.priceView.imageTag
                 
+                // 保存进本地
                 self.addDataIntoTable(record: record)
-               self.dismiss(animated: true, completion: nil)
+                
+                //  保存进网络
+//                record.save()
+                record.save(a: { (success) in
+                    if success {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        print("error")
+                    }
+                })
+                
             }
             
         }
@@ -222,8 +233,6 @@ class KKCalculateIconView: UIView {
         for i in 0..<10 {
             let j = i % 6
             let k = i / 6
-            print(j)
-            print(k)
             
             let titleAry = ["一般","用餐","零食","交通","信用卡","女士","娱乐","住房","饮料","备用"]
             let colorsAry = [UIColor(red:0.69, green:0.70, blue:0.33, alpha:1.00),

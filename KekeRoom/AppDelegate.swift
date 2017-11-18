@@ -9,6 +9,7 @@
 import UIKit
 import Realm
 import RealmSwift
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,8 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        LeanCloud.initialize(applicationID: "w1leMt5EVYltNlrgy7LMBQbR-gzGzoHsz", applicationKey: "7orpJOjQNHk72lOz8b04vHJb")
+        
         print(NSHomeDirectory())
+            
         return true
     }
 
