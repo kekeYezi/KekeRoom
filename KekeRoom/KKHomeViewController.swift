@@ -13,7 +13,7 @@ import Realm
 import RealmSwift
 import LeanCloud
 
-class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
     lazy var headImageView = UIImageView.init()
     
     lazy var labelsBgView = UIView.init()
@@ -110,7 +110,6 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         self.getTotalAry(puppies: puppies)
         
         self.reloadUI()
-        print(self.recordDataAry)
         self.mainTableView.reloadData()
     }
     
@@ -225,7 +224,6 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         circelView.maximumValue = 80;
         circelView.tapBlock = { () in
             self.present(KKCalculateViewController(), animated: true, completion: {
-                print("1")
             })
         }
     
@@ -271,8 +269,8 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         let record:ChargeRecord = a[indexPath.row]
         cell.contentLabel.text = record.sumary
         cell.priceLabel.text = "\(record.price)"
-        cell.iconImageView.image = UIImage.init(named: "type_big_\(record.imageTag)")
-        
+        cell.iconButton.setImage(UIImage.init(named: "type_big_\(record.imageTag)"), for: .normal)
+        cell.cellModel = record
         cell.selectionStyle = .none
     
         return cell
@@ -292,10 +290,12 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         for ary:[ChargeRecord] in recordDataAry {
             for model in ary {
                 prices = prices + model.price
-                dateStirng = formatter.string(from: model.date)
+                
             }
         }
     
+        let dateModelInfo:ChargeRecord = recordDataAry[section][0]
+        dateStirng = formatter.string(from: dateModelInfo.date)
         view.titlePriceLabel.text = "\(prices)"
         view.titleDateLabel.text = dateStirng
         return view
@@ -303,6 +303,23 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 20
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let sc = -scrollView.contentOffset.y
+        if sc < 0 {
+            
+            return
+        }
+        if sc > 100 {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5) {
+                self.present(KKCalculateViewController(), animated: true, completion: {
+                })
+            }
+            return
+        }
+        
+        circelView.ccImageView.transform = CGAffineTransform.init(rotationAngle: CGFloat((Double.pi/4) * Double(sc/50)))
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

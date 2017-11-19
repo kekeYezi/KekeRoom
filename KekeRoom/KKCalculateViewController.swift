@@ -12,7 +12,20 @@ import RxSwift
 import Realm
 import RealmSwift
 
+let colorsAry = [UIColor(red:0.69, green:0.70, blue:0.33, alpha:1.00),
+                 UIColor(red:0.54, green:0.67, blue:0.66, alpha:1.00),
+                 UIColor(red:0.60, green:0.47, blue:0.41, alpha:1.00),
+                 UIColor(red:0.44, green:0.51, blue:0.70, alpha:1.00),
+                 UIColor(red:0.59, green:0.73, blue:0.86, alpha:1.00),
+                 UIColor(red:0.87, green:0.56, blue:0.74, alpha:1.00),
+                 UIColor(red:0.88, green:0.58, blue:0.32, alpha:1.00),
+                 UIColor(red:0.80, green:0.73, blue:0.42, alpha:1.00),
+                 UIColor(red:0.54, green:0.42, blue:0.69, alpha:1.00),
+                 UIColor(red:0.94, green:0.52, blue:0.20, alpha:1.00)]
+
 class KKCalculateViewController : UIViewController {
+    lazy var initModel:ChargeRecord = ChargeRecord()
+    
     lazy var titleView = KKCalculateNavView.init()
     lazy var priceView = KKShowPriceView.init()
     lazy var iconsView = KKCalculateIconView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.bounds.size.width, height: 360))
@@ -46,6 +59,15 @@ class KKCalculateViewController : UIViewController {
     
     func showPriceView () {
         self.view.addSubview(priceView)
+        if self.initModel.price > 0 {
+            let str = String(format: "%.2f", (self.initModel.price))
+            priceView.priceLabel.text = "¥ \(str)"
+            priceView.titlePriceLabel.text = self.initModel.sumary
+            priceView.priceIconImageView.image = UIImage.init(named: "type_big_\(self.initModel.imageTag)")
+            priceView.backgroundColor = colorsAry[Int(self.initModel.imageTag)! - 1]
+            priceView.imageTag = self.initModel.imageTag
+        }
+        
         priceView.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.top.equalTo(titleView.snp.bottom)
@@ -93,7 +115,6 @@ class KKCalculateViewController : UIViewController {
         caculateView.gerResultBlock = { result in
             if Double(result)! <= 0 {
                 // doudong
-                print("dd")
                 self.priceView.shakePriceLabel()
             } else {
                 let record = ChargeRecord()
@@ -155,7 +176,6 @@ class KKCalculateNavView: UIView {
     }
     
     @objc private func back () {
-        print("1")
         if let block = backBlock {
             block()
         }
@@ -235,16 +255,7 @@ class KKCalculateIconView: UIView {
             let k = i / 6
             
             let titleAry = ["一般","用餐","零食","交通","信用卡","女士","娱乐","住房","饮料","备用"]
-            let colorsAry = [UIColor(red:0.69, green:0.70, blue:0.33, alpha:1.00),
-                             UIColor(red:0.54, green:0.67, blue:0.66, alpha:1.00),
-                             UIColor(red:0.60, green:0.47, blue:0.41, alpha:1.00),
-                             UIColor(red:0.44, green:0.51, blue:0.70, alpha:1.00),
-                             UIColor(red:0.59, green:0.73, blue:0.86, alpha:1.00),
-                             UIColor(red:0.87, green:0.56, blue:0.74, alpha:1.00),
-                             UIColor(red:0.88, green:0.58, blue:0.32, alpha:1.00),
-                             UIColor(red:0.80, green:0.73, blue:0.42, alpha:1.00),
-                             UIColor(red:0.54, green:0.42, blue:0.69, alpha:1.00),
-                             UIColor(red:0.94, green:0.52, blue:0.20, alpha:1.00)]
+
             
             let item = KKCalculateIconItemView.init(frame: CGRect.init(x: CGFloat(j) * itemWidth, y: CGFloat(k) * itemHeight, width: itemWidth, height: itemHeight))
             self.addSubview(item)
@@ -348,7 +359,6 @@ class KKCalculateNoteView: UIView {
     }
     
     @objc private func write () {
-        print("1")
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -393,7 +403,6 @@ class KKCalculateView: UIView {
         }
         
         for i in 0..<4 {
-            print(i)
             let whiteVLine = UILabel.init()
             self.addSubview(whiteVLine)
             whiteVLine.backgroundColor = UIColor.white
@@ -405,7 +414,6 @@ class KKCalculateView: UIView {
         }
         
         for i in 0..<4 {
-            print(i)
             let whiteHLine = UILabel.init()
             self.addSubview(whiteHLine)
             whiteHLine.backgroundColor = UIColor.white
