@@ -1,0 +1,6 @@
+framework module Pods_KekeRoomWidget {
+  umbrella header "Pods-KekeRoomWidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

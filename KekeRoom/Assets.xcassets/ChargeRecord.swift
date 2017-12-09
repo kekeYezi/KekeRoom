@@ -52,6 +52,24 @@ class ChargeRecord: Object {
         
         return model
     }
+    
+    public func getDicModel(object:NSMutableDictionary) -> ChargeRecord {
+        let model = ChargeRecord()
+        
+        let string:String = object.object(forKey: "sumary")! as! String
+        model.sumary = string
+        
+        let imageTag:String = object.object(forKey: "imageTag")! as! String
+        model.imageTag = imageTag
+        
+        let date:Date = object.object(forKey: "date")! as! Date
+        model.date = date
+        
+        let price:String = object.object(forKey: "price")! as! String
+        model.price = Double(price)!
+        
+        return model
+    }
         
     func dateWithDate(date: Date) -> LCDate {
         let dateFormatter = DateFormatter()

@@ -121,19 +121,19 @@ class KKCalculateViewController : UIViewController {
                 record.price = Double(result)!
                 record.sumary = self.priceView.titlePriceLabel.text!
                 record.imageTag = self.priceView.imageTag
-                
+                record.date = Date.init()
                 // 保存进本地
                 self.addDataIntoTable(record: record)
+                self.dismiss(animated: true, completion: nil)
                 
                 //  保存进网络
-//                record.save()
-                record.save(a: { (success) in
-                    if success {
-                        self.dismiss(animated: true, completion: nil)
-                    } else {
-                        print("error")
-                    }
-                })
+//                record.save(a: { (success) in
+//                    if success {
+//                        self.dismiss(animated: true, completion: nil)
+//                    } else {
+//                        print("error")
+//                    }
+//                })
                 
             }
             

@@ -50,7 +50,8 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.readNetData()
+//        self.readNetData()
+        self.readLocalRealm()
         print("viewWillAppear")
     }
     
@@ -96,7 +97,7 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
     // 本地数据库读取
     func readLocalRealm () {
         let realm = try! Realm()
-        let puppies = realm.objects(ChargeRecord.self).sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
+        var puppies:[ChargeRecord] = realm.objects(ChargeRecord.self).sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
             
             let timeInterval1:TimeInterval = model1.date.timeIntervalSince1970
             let timeStamp1 = Int(timeInterval1)
@@ -106,6 +107,29 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
             
             return timeStamp1 > timeStamp2
         })
+        
+        // query widget data
+        
+        let userDefault = UserDefaults.init(suiteName: "group.com.keke.kekeroom")
+        let widgetInfo:[NSMutableDictionary] = userDefault?.object(forKey: "widgetData")! as! [NSMutableDictionary]
+        print("\(widgetInfo)")
+        
+        for dic:NSMutableDictionary in widgetInfo {
+            let a = ChargeRecord().getDicModel(object:dic)
+            puppies.append(a)
+        }
+        
+        puppies = puppies.sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
+            
+            let timeInterval1:TimeInterval = model1.date.timeIntervalSince1970
+            let timeStamp1 = Int(timeInterval1)
+            
+            let timeInterval2:TimeInterval = model2.date.timeIntervalSince1970
+            let timeStamp2 = Int(timeInterval2)
+            
+            return timeStamp1 > timeStamp2
+        })
+        
         self.recordDataAry.removeAll()
         self.getTotalAry(puppies: puppies)
         
