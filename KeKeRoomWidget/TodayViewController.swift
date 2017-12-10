@@ -15,8 +15,29 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     var dataAry = Array<Any>()
         
     @IBOutlet weak var moneyField: UITextField!
+    
+    @IBOutlet weak var successLabel: UILabel!
+    
+    @IBOutlet weak var sunmaryLabel: UILabel!
+    
+    @IBOutlet weak var iconBtn: UIButton!
+    
+    let sumarysArrays = ["用餐","交通","一般"]
+    let iconArrays = ["2","4","1"]
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let userDefault = UserDefaults.init(suiteName: "group.com.keke.kekeroom")
+        let widgetInfo:[NSMutableDictionary] = userDefault?.object(forKey: "widgetData")! as! [NSMutableDictionary]
+        
+        for obj in widgetInfo {
+           self.dataAry.append(obj)
+        }
+        
+        self.iconBtn.setImage(UIImage.init(named: "type_big_\(self.iconArrays[index])"), for: .normal)
+        self.sunmaryLabel.text = self.sumarysArrays[index]
         
         print(NSHomeDirectory())
 
@@ -32,8 +53,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
         let record = NSMutableDictionary.init()
         record.setObject(self.moneyField.text!, forKey: "price" as NSCopying)
-        record.setObject("用餐", forKey: "sumary" as NSCopying)
-        record.setObject("1", forKey: "imageTag" as NSCopying)
+        record.setObject(self.sumarysArrays[index], forKey: "sumary" as NSCopying)
+        record.setObject(self.iconArrays[index], forKey: "imageTag" as NSCopying)
         record.setObject(Date.init(), forKey: "date" as NSCopying)
         
         self.dataAry.append(record)
@@ -42,6 +63,23 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         userDefault?.set(self.dataAry, forKey: "widgetData")
         userDefault?.synchronize()
         
+        self.moneyField.text = ""
+        self.successLabel.text = "添加成功"
+        self.perform(#selector(clearInfo), with: self, afterDelay: 1.5)
+        
+    }
+    
+    @IBAction func changeTypeAction(_ sender: Any) {
+        self.index = self.index + 1
+        if (self.index % 3) == 0 {
+            self.index = 0
+        }
+        self.iconBtn.setImage(UIImage.init(named: "type_big_\(self.iconArrays[index])"), for: .normal)
+        self.sunmaryLabel.text = self.sumarysArrays[index]
+    }
+    
+    @objc func clearInfo() {
+        self.successLabel.text = ""
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,14 +100,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     }
 
-    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.newData)
     }
     
