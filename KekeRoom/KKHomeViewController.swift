@@ -111,13 +111,20 @@ class KKHomeViewController: UIViewController , UITableViewDelegate, UITableViewD
         // query widget data
         
         let userDefault = UserDefaults.init(suiteName: "group.com.keke.kekeroom")
-        let widgetInfo:[NSMutableDictionary] = userDefault?.object(forKey: "widgetData")! as! [NSMutableDictionary]
-        print("\(widgetInfo)")
-        
-        for dic:NSMutableDictionary in widgetInfo {
-            let a = ChargeRecord().getDicModel(object:dic)
-            puppies.append(a)
+        let tmpAry = userDefault?.object(forKey: "widgetData")
+        if tmpAry != nil {
+            let widgetInfo:[NSMutableDictionary] = tmpAry as! [NSMutableDictionary]
+            
+            print("\(widgetInfo)")
+            
+            for dic:NSMutableDictionary in widgetInfo {
+                let a = ChargeRecord().getDicModel(object:dic)
+                puppies.append(a)
+            }
         }
+       
+        
+
         
         puppies = puppies.sorted(by: {(model1: ChargeRecord, model2: ChargeRecord) -> Bool in
             

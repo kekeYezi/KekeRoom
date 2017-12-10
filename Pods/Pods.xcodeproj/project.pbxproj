@@ -42,7 +42,7 @@
 		0FFCE540E0691D1AC552A2FEC52B1440 /* PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BAA05DD9D1DE4D8550AB249C56B9CA /* PrimitiveSequence.swift */; };
 		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C97A2B27958A0CD990404F0859209C /* Timeline.swift */; };
 		1155A840CFE367DB31A84C1AD61CA822 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A9EF81250E43873D80E29850F2464C /* UIBarButtonItem+Rx.swift */; };
-		117AAF576871C56BD96E48C0F9320391 /* Pods-KekeRoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE383894D3A6B6DBCC4F09F7ACAEBB /* Pods-KekeRoom-dummy.m */; };
+		117AAF576871C56BD96E48C0F9320391 /* Pods-KekeRoom-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03252B53F07EA7C28C1CBC6FAD0CE06F /* Pods-KekeRoom-dummy.m */; };
 		124E050BF715356851E8582B3939D0D4 /* ThreadSafeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4F815E2F45005D8080021FEA67EFAE /* ThreadSafeReference.swift */; };
 		12D4368C10305EFEF5B5062C903E180B /* RxTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB2F11B74F9FBC28BDA63809EABABD6 /* RxTableViewDelegateProxy.swift */; };
 		142AF06C437673CB4E9316D2D40245D8 /* TakeLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6E2AAB36EC7923C92B402B3E905E1 /* TakeLast.swift */; };
@@ -147,9 +147,8 @@
 		455D3171ABAB0C15F5A60A067D832640 /* RLMSyncPermission.h in Headers */ = {isa = PBXBuildFile; fileRef = BCE8570407764F7398A4B9AD4433BC65 /* RLMSyncPermission.h */; };
 		4601C2D2FF44B147CCC655BDD40D604D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9829352299AD2A40291409F7A5F40B8 /* Data.swift */; };
 		462868C504F1BB6E4CDF0F942900B692 /* _RXObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 505DC2976449F3E550A98EBB75220828 /* _RXObjCRuntime.m */; };
-		46BE13FFF51990550F5A846EB6C3DB97 /* Pods-KekeRoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6D86C42D334FAC86B5554D807D6CA4 /* Pods-KekeRoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BE13FFF51990550F5A846EB6C3DB97 /* Pods-KekeRoom-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B599521BC2CE968CA1562E75549ED498 /* Pods-KekeRoom-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46DD41DC8C138ED26679C88F364C0F5B /* OperationQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B71FD0B70518287B3C96435DA5AB50 /* OperationQueueScheduler.swift */; };
-		4707AE11BFCCD126206AF44E2F44F57B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88754B0469300817CFE92AE9B30D769 /* Foundation.framework */; };
 		47C6B1E05D42BD13B81A5B7E8032CC50 /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EDB1E08371717CA84251FCA2EE9A76 /* RefCountDisposable.swift */; };
 		47F180229DB364CD2B0849C3DBFFB51B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEEDDCA728AABE22F61AB7CDD091227 /* Request.swift */; };
 		4AE7EECA064E00A71EC1C37204B621BE /* ToArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1518D9CA82AA917F39F4A3DE3EC9C /* ToArray.swift */; };
@@ -172,6 +171,7 @@
 		4F8CB6C78F10E9CB0F576F1E9C399C40 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03C58E683EF33E497C2FC49312EECFB /* ConstraintPriority.swift */; };
 		5083247C6D97297CAC8D232B7108106E /* ConcurrentDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D1EC71834E1DED9A62453BA40007D4 /* ConcurrentDispatchQueueScheduler.swift */; };
 		509A7D9F2055BCC678E744B9CB9CEE8C /* Platform.Linux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D3784D28CA5879100410097901E99 /* Platform.Linux.swift */; };
+		50D3A175308285821311B045A6A9ACC3 /* Pods-kekeRoomWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35E2F389C8337680FCFF1C536DCCAC9B /* Pods-kekeRoomWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		513BA6C1DB0D49B89F6AC1F295259309 /* keychain_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF33613A76CCBA31AD3E483BDDD43E64 /* keychain_helper.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.0.2\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		51B6FA45F34F584A7A70A6D3C1BC50F8 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64A8961E5F0E29792412F37975D510E /* Object.swift */; };
 		51E57E402C4639CA97CE2F27DF62FEB1 /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5DC0FE89FA1B58FAB6AE551637404 /* ObservableType+Extensions.swift */; };
@@ -246,7 +246,6 @@
 		6D269AC8432CDF915245ACB798B59076 /* Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902378BC508BC84FBC7A79DE7722D079 /* Reactive.swift */; };
 		6EFC175FB7E1B2CD7F73728714D53655 /* SubscribeOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADD432D1E51150F049B4A3AFA3C5AB /* SubscribeOn.swift */; };
 		6F294ACA393F6AB783D8B602253733F5 /* RxTextStorageDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786F86EB0FDEBFFA2905A39A88061714 /* RxTextStorageDelegateProxy.swift */; };
-		6FB63526065D688C3BC908C681BB7655 /* Pods-KekeRoomWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0615DB2E59C8162DBF5DE4AA540A3 /* Pods-KekeRoomWidget-dummy.m */; };
 		7014F97AEDFFFD9B55619299FA98E8EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88754B0469300817CFE92AE9B30D769 /* Foundation.framework */; };
 		70850B0688566B8388D66F4A57710615 /* PrimitiveSequence+Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD152FCB711381AA3BCA920E0250FE1 /* PrimitiveSequence+Zip+arity.swift */; };
 		722099C268EA0038630DB093AE68E4C7 /* RLMSyncManager_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 8D7146B1E5BAE11F3B84EC7C2C02DD29 /* RLMSyncManager_Private.h */; };
@@ -271,6 +270,7 @@
 		7AD90563C4A90931390AFDE2995BEA06 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4116F30C0A84CA18BB80E2DFA0209C1 /* UIScrollView+Rx.swift */; };
 		7B1AB27F1CAEF7BE075A5C1C1BD16304 /* RLMSyncConfiguration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 336D1DFDE566F5B55A6F4BE6C8D8DC96 /* RLMSyncConfiguration_Private.h */; };
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E906237F2CCB5E9642F58CFEC8CACB4 /* SessionDelegate.swift */; };
+		7B6A4C9E9B678ED5F2CF7AE959A229EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88754B0469300817CFE92AE9B30D769 /* Foundation.framework */; };
 		7B7474C5F6FA88C9696AE0A42C56CEF8 /* UISwitch+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39279A3A3562CC83DE7CA74126834856 /* UISwitch+Rx.swift */; };
 		7BEBBFD1887086AF4A1E3A061C3945D0 /* RLMObjectBase_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A90FF668033224D9C41308CDAE730F /* RLMObjectBase_Dynamic.h */; };
 		7C43B21B1DCF4627DE72E9CA88C9BE82 /* RLMMigration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1B8B8BBD96BC760F33FC5B54DCBA7B /* RLMMigration.h */; };
@@ -321,6 +321,7 @@
 		8F54BFD70DE6DFBAA1375EE335B1B5C1 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF484006085AC361F3456A78DEF86E6A /* Scan.swift */; };
 		8F6D31CB5510B3D8858C4ACF6ED4C42E /* String+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A9BAAFC44B7F82EFEB33AF5DD3CEB6 /* String+Rx.swift */; };
 		8F9F659BAD187F4C418EDB539A827A99 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FF267BC14E1672232823A5D7AC79DB /* Driver.swift */; };
+		8FABD12A9E95D20B4D98C741B1B8A382 /* Pods-kekeRoomWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D089CD4F40E5395065BEE23EA05771 /* Pods-kekeRoomWidget-dummy.m */; };
 		8FD19967560F8C8580E95D6FF55FF906 /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106DE8BBA6A98A5E9BD42F822CBD79A /* Single.swift */; };
 		90123338567400A882099074A8C05D8B /* RLMRealmConfiguration+Sync.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DBA3413AC99FFC5D675B90C7B6224FF4 /* RLMRealmConfiguration+Sync.h */; };
 		9127A152B87E1A6AB190047CF8C55DED /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA7275C6661B1312EB4DC6A4FE6DC29 /* ConstraintInsetTarget.swift */; };
@@ -555,7 +556,6 @@
 		F6CA1BCC8C4AD8D4E32891117A43CD5F /* RLMSyncUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 153B63564EAB8F1B091E7A234BB28E68 /* RLMSyncUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"3.0.2\"' -D__ASSERTMACROS__ -DREALM_ENABLE_SYNC"; }; };
 		F70E76C47F1679F933056F61B110DC80 /* RLMSyncUtil.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 0223B5636ECF5605FBABB79032A70C9D /* RLMSyncUtil.h */; };
 		F71B886BC95158AA6AAE5A188622272A /* PublishRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3E809FAE5AC5E66E7C883940DB9A9 /* PublishRelay.swift */; };
-		F731B3C47193AC5E7049620524F0631F /* Pods-KekeRoomWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D65388BF834899F882B5682E668C33 /* Pods-KekeRoomWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F79982B7EA25CBDC648BD387EB4E9291 /* RLMSyncSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE97A26668276E496AA3CC3E065DFB0 /* RLMSyncSession.h */; };
 		F89B125698CCC8B390BD1FAE3D35FA5F /* SkipUntil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F54EA3F8F971C7FAD918C3834C9B0 /* SkipUntil.swift */; };
 		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A31DDFF173A5FBDA95D36110BB4013 /* Alamofire.swift */; };
@@ -582,12 +582,26 @@
 			remoteGlobalIDString = 0B93ECF31ABF753EE2D96F71B24CE026;
 			remoteInfo = RxSwift;
 		};
+		088074D57B25F2A25567195E806A409F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A53E501F99DFB3BA77AF40A7C6171D0;
+			remoteInfo = Realm;
+		};
 		25594D6159CC065177BDCDA4F4A49DE4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0B93ECF31ABF753EE2D96F71B24CE026;
 			remoteInfo = RxSwift;
+		};
+		293AF0704737BBC0094839C1981311DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C19D0BE3AB4D4FAAFE69A7A95C6FE1C;
+			remoteInfo = LeanCloud;
 		};
 		2E146CBE76623DE7BEDF04BF2833AE47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -603,12 +617,19 @@
 			remoteGlobalIDString = AF0C2FD9A5D56757F8138218A6391447;
 			remoteInfo = RxCocoa;
 		};
-		670E5844B4F88D46C8F27A71984E1F39 /* PBXContainerItemProxy */ = {
+		4A34D9B5E71DEC9232F853181A0C4480 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A53E501F99DFB3BA77AF40A7C6171D0;
-			remoteInfo = Realm;
+			remoteGlobalIDString = 3C61812C3B0A03FCC1D97E5525C3E7F0;
+			remoteInfo = RealmSwift;
+		};
+		5D5A360E1960DA4490B8CFEEC4F39BDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
 		};
 		76BB2DE78DEC1369A3039DA0DD59C58B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -631,20 +652,6 @@
 			remoteGlobalIDString = 3C61812C3B0A03FCC1D97E5525C3E7F0;
 			remoteInfo = RealmSwift;
 		};
-		9515D66B24A9EE1A3307E75CB10607E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
-			remoteInfo = Alamofire;
-		};
-		CA7F8C591E2AEFB757C8436501B82529 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C61812C3B0A03FCC1D97E5525C3E7F0;
-			remoteInfo = RealmSwift;
-		};
 		D3B797454745F2DAE613CC59A5297BFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -653,13 +660,6 @@
 			remoteInfo = Alamofire;
 		};
 		D970894BC6B3D3BB1EED29C4ACE6B32E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C19D0BE3AB4D4FAAFE69A7A95C6FE1C;
-			remoteInfo = LeanCloud;
-		};
-		E21D1EFF5F926234110EFF15E2071896 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -748,11 +748,13 @@
 /* Begin PBXFileReference section */
 		000B85A7BB974EE2E66E1F2468FD7744 /* SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharedSequence.swift; path = RxCocoa/Traits/SharedSequence/SharedSequence.swift; sourceTree = "<group>"; };
 		002F10CE54651705E76E75977248AAD2 /* RLMListBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMListBase.mm; path = Realm/RLMListBase.mm; sourceTree = "<group>"; };
+		006EDAB78FE1BEAB14CF4FBDE1C3FF6D /* Pods-kekeRoomWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kekeRoomWidget.release.xcconfig"; sourceTree = "<group>"; };
 		00E1A648D0DB57402BF4E01FCA882DB5 /* Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Create.swift; path = RxSwift/Observables/Create.swift; sourceTree = "<group>"; };
 		00EE17D88EAC7A8FFACD0B7DD39CF965 /* RxTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTarget.swift; path = RxCocoa/Common/RxTarget.swift; sourceTree = "<group>"; };
 		0110037C71143E8F39F35633D7897FBC /* ControlEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlEvent.swift; path = RxCocoa/Traits/ControlEvent.swift; sourceTree = "<group>"; };
 		0223B5636ECF5605FBABB79032A70C9D /* RLMSyncUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUtil.h; path = include/RLMSyncUtil.h; sourceTree = "<group>"; };
 		03020BFA88310B6A4379BA59A6B65070 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Sources/Storage/Extension.swift; sourceTree = "<group>"; };
+		03252B53F07EA7C28C1CBC6FAD0CE06F /* Pods-KekeRoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KekeRoom-dummy.m"; sourceTree = "<group>"; };
 		03637F603EEDBB75AE6B322EFF02A74A /* RxCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-umbrella.h"; sourceTree = "<group>"; };
 		03758E3A04367087F28172600C99BD90 /* Sample.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sample.swift; path = RxSwift/Observables/Sample.swift; sourceTree = "<group>"; };
 		03DFAC9EB9CAB0FB51E96F51154D08A9 /* LeanCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LeanCloud.modulemap; sourceTree = "<group>"; };
@@ -792,9 +794,7 @@
 		12ADD432D1E51150F049B4A3AFA3C5AB /* SubscribeOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscribeOn.swift; path = RxSwift/Observables/SubscribeOn.swift; sourceTree = "<group>"; };
 		13200F1DE6A4440E31DAFBE4B5577503 /* ElementAt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementAt.swift; path = RxSwift/Observables/ElementAt.swift; sourceTree = "<group>"; };
 		139CB3956203B1AD77D310470D9BDF26 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13FC17AB8B356012630D9DEE933D847E /* Pods-KekeRoomWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoomWidget.release.xcconfig"; sourceTree = "<group>"; };
 		146F3D6345172C430B7712A6DBDAE13C /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = RxSwift/Observables/Delay.swift; sourceTree = "<group>"; };
-		14B0615DB2E59C8162DBF5DE4AA540A3 /* Pods-KekeRoomWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KekeRoomWidget-dummy.m"; sourceTree = "<group>"; };
 		152B3263AB4DDF891828A51C0A6F3B8A /* RxTableViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTableViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxTableViewDataSourceType.swift; sourceTree = "<group>"; };
 		153B63564EAB8F1B091E7A234BB28E68 /* RLMSyncUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUtil.mm; path = Realm/RLMSyncUtil.mm; sourceTree = "<group>"; };
 		1561E49006AE3543C0A40609496DBAE1 /* DelegateProxyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegateProxyType.swift; path = RxCocoa/Common/DelegateProxyType.swift; sourceTree = "<group>"; };
@@ -802,8 +802,6 @@
 		15C373B067258609211E0DA765AC753C /* RLMAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMAccessor.h; path = include/RLMAccessor.h; sourceTree = "<group>"; };
 		15E5DC0FE89FA1B58FAB6AE551637404 /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableType+Extensions.swift"; path = "RxSwift/ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		15F1CC0087EA65BFD2FCA552761EDF2A /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
-		16363F7C69EC61DD2A1541EF6CE48D11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		169975A73EC1293156D06E9705D7340D /* Pods-KekeRoomWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KekeRoomWidget-resources.sh"; sourceTree = "<group>"; };
 		1747F1AB192F64BE020E87542E781105 /* RLMSchema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSchema.h; path = include/RLMSchema.h; sourceTree = "<group>"; };
 		19E55F77BBB1D002CB07A6FF30001EC6 /* collection_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = collection_notifier.cpp; path = Realm/ObjectStore/src/impl/collection_notifier.cpp; sourceTree = "<group>"; };
 		19EBAD26FC10A249F4B2F8FC1462A297 /* Dematerialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dematerialize.swift; path = RxSwift/Observables/Dematerialize.swift; sourceTree = "<group>"; };
@@ -816,7 +814,6 @@
 		1CB297F1AA48C9CF025049700B8F7A22 /* KVORepresentable+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KVORepresentable+Swift.swift"; path = "RxCocoa/Foundation/KVORepresentable+Swift.swift"; sourceTree = "<group>"; };
 		1CDC3E6C3D363F060371D6100D6C8B52 /* ControlTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlTarget.swift; path = RxCocoa/Common/ControlTarget.swift; sourceTree = "<group>"; };
 		1CE591E04AEC1622BDA8C0117C7464D5 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Storage/Error.swift; sourceTree = "<group>"; };
-		1CF04394CF29D6BA2F60C9A59CABAF45 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeanCloud.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D201DEACC4D62074570A744775FF062 /* UIPickerView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPickerView+Rx.swift"; path = "RxCocoa/iOS/UIPickerView+Rx.swift"; sourceTree = "<group>"; };
 		1D536899CC441D9E5F810824F0A9A270 /* RealmSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealmSwift-dummy.m"; sourceTree = "<group>"; };
 		1DD2B96A910C3424A79C1C30FEAD2911 /* SchedulerType+SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SchedulerType+SharedSequence.swift"; path = "RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift"; sourceTree = "<group>"; };
@@ -826,13 +823,14 @@
 		21AC30B4229434AFF378D58340E7CA46 /* UIImageView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Rx.swift"; path = "RxCocoa/iOS/UIImageView+Rx.swift"; sourceTree = "<group>"; };
 		21D63E625D9E04D3D995C6917B4FFD0D /* RLMQueryUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMQueryUtil.mm; path = Realm/RLMQueryUtil.mm; sourceTree = "<group>"; };
 		220E2833528ECFC2387CE7AD38CB46B1 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		22D9E3822F5041D9462C5A871A9BF282 /* Pods-KekeRoomWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KekeRoomWidget.modulemap"; sourceTree = "<group>"; };
 		23BAA05DD9D1DE4D8550AB249C56B9CA /* PrimitiveSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimitiveSequence.swift; path = RxSwift/Traits/PrimitiveSequence.swift; sourceTree = "<group>"; };
 		23C6A76E2A063E5CE01CD30E12F19200 /* network_reachability_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = network_reachability_observer.cpp; path = Realm/ObjectStore/src/sync/impl/apple/network_reachability_observer.cpp; sourceTree = "<group>"; };
+		24C71769A7B7BDC27D2B1459BC9AA329 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F55EB2CB5E7F4A7C2D8672E3A304C2 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Storage/Configuration.swift; sourceTree = "<group>"; };
 		25D3D683D1F0EC7C4367C772873FCB2D /* RxTextViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTextViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTextViewDelegateProxy.swift; sourceTree = "<group>"; };
 		25F83099B94B50E1D53D85587CEBBC61 /* SubscriptionDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubscriptionDisposable.swift; path = RxSwift/Disposables/SubscriptionDisposable.swift; sourceTree = "<group>"; };
 		267FEA3DEBB1D40332EC78D7354C0B3D /* RLMManagedArray.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMManagedArray.mm; path = Realm/RLMManagedArray.mm; sourceTree = "<group>"; };
+		270528C2D686658CDF138CF685199C17 /* Pods_kekeRoomWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_kekeRoomWidget.framework; path = "Pods-kekeRoomWidget.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28561994679133CF8893F971136CBD33 /* UIRefreshControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Rx.swift"; path = "RxCocoa/iOS/UIRefreshControl+Rx.swift"; sourceTree = "<group>"; };
 		289631A95E55F6FEBD7449F085866A51 /* SwiftVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftVersion.swift; path = RealmSwift/SwiftVersion.swift; sourceTree = "<group>"; };
 		28C0A069AF6DD1DF4D528E32938068F9 /* Materialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Materialize.swift; path = RxSwift/Observables/Materialize.swift; sourceTree = "<group>"; };
@@ -843,6 +841,7 @@
 		2B1071B337A6FFF8F44BA5AFD27A7C33 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B273AEBFF13628220861C0E9AA2152F /* DisposeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposeBase.swift; path = RxSwift/Disposables/DisposeBase.swift; sourceTree = "<group>"; };
 		2B489A256E73EA4FCD76049B9940A06F /* sync_metadata.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_metadata.cpp; path = Realm/ObjectStore/src/sync/impl/sync_metadata.cpp; sourceTree = "<group>"; };
+		2B4DA6F8ACF3BF39641F67DE6839F119 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B7221B5B3502BECDB6669168F27CD03 /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
 		2BC285693987247CA0860B7285FDD4DF /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		2BEA995742A904EC6D23DE419DA1FF0B /* Amb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Amb.swift; path = RxSwift/Observables/Amb.swift; sourceTree = "<group>"; };
@@ -854,6 +853,7 @@
 		30E0EAB8E5FC5BBE8A460F64350FA2F6 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		319550566608F3F4BA5FA101554EAC3C /* RxCocoa.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCocoa.swift; path = RxCocoa/RxCocoa.swift; sourceTree = "<group>"; };
 		31C97A2B27958A0CD990404F0859209C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		32055A76DDF50118153B98389EFE0565 /* Pods-kekeRoomWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-kekeRoomWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		32C058E317C9F58938A9021AC239C163 /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		32D2014E83A4BDFD3227CF39A39DEC03 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		3354E929E08501C96C709F16D35A888F /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
@@ -864,9 +864,10 @@
 		339CEF99882D6B7F4E63335605CB4708 /* Number.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Number.swift; path = Sources/Storage/DataType/Number.swift; sourceTree = "<group>"; };
 		33A9BAAFC44B7F82EFEB33AF5DD3CEB6 /* String+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Rx.swift"; path = "RxSwift/Extensions/String+Rx.swift"; sourceTree = "<group>"; };
 		344CC908F822A25A44F98CF4E3B75E99 /* RLMSyncPermissionResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncPermissionResults.mm; path = Realm/RLMSyncPermissionResults.mm; sourceTree = "<group>"; };
+		34D73E1FF3B2580B4BD925B5078725AC /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCocoa.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35C332ECD23448737FCB215EC16FE73C /* RLMRealmConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealmConfiguration.h; path = include/RLMRealmConfiguration.h; sourceTree = "<group>"; };
+		35E2F389C8337680FCFF1C536DCCAC9B /* Pods-kekeRoomWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-kekeRoomWidget-umbrella.h"; sourceTree = "<group>"; };
 		3606B900B3D38405597C9F1A707162E9 /* UILabel+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Rx.swift"; path = "RxCocoa/iOS/UILabel+Rx.swift"; sourceTree = "<group>"; };
-		36497229DBD35EBEFE7B252F9888654A /* Pods-KekeRoom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KekeRoom.modulemap"; sourceTree = "<group>"; };
 		368CA86259470C2B0460B970CE38E1FB /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Storage/DataType/Dictionary.swift; sourceTree = "<group>"; };
 		3733793183EEE9DB7C1F76F082BF97EF /* AsyncLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncLock.swift; path = RxSwift/Concurrency/AsyncLock.swift; sourceTree = "<group>"; };
 		374B445537B78F4C84A1FEF31DD3CDFF /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = RxSwift/Observables/Map.swift; sourceTree = "<group>"; };
@@ -881,6 +882,7 @@
 		3B1647770F61FB1E9F7E8A61101E29BC /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
 		3B688AC9ECCD55040560671C81E71DD5 /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
 		3BBDA0BBA944E80483E29B7AAD141A74 /* RLMListBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMListBase.h; path = include/RLMListBase.h; sourceTree = "<group>"; };
+		3BF7F4EBEE6DFF18B464309875CAD22A /* Pods-kekeRoomWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-kekeRoomWidget.modulemap"; sourceTree = "<group>"; };
 		3CA7275C6661B1312EB4DC6A4FE6DC29 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		3CC3897437796A3AC77063D32A9B3037 /* UITextField+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Rx.swift"; path = "RxCocoa/iOS/UITextField+Rx.swift"; sourceTree = "<group>"; };
 		3CDA9A91C1E11218DA2CF84DD35B40FF /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
@@ -894,6 +896,7 @@
 		3FA4137BCF063CB675B70754D1066DA3 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		3FBE5866AC17885871994D1446010C4A /* RLMSyncUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncUser.h; path = include/RLMSyncUser.h; sourceTree = "<group>"; };
 		402A496251B0C908EC42D8FA9CBCDE9B /* NSLayoutConstraint+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Rx.swift"; path = "RxCocoa/Common/NSLayoutConstraint+Rx.swift"; sourceTree = "<group>"; };
+		4058C85E015DDA15F188411DAF1B5298 /* Pods-KekeRoom-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KekeRoom-acknowledgements.plist"; sourceTree = "<group>"; };
 		4073F1D203F24F3B8C5DFA68D84E3C3E /* primitive_list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = primitive_list_notifier.cpp; path = Realm/ObjectStore/src/impl/primitive_list_notifier.cpp; sourceTree = "<group>"; };
 		4119CE2A313447C1EFE63E90265B4E5D /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
 		414EF1CD8F395C0AABBAA0B4B124A1B8 /* SectionedViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedViewDataSourceType.swift; path = RxCocoa/Common/SectionedViewDataSourceType.swift; sourceTree = "<group>"; };
@@ -914,8 +917,10 @@
 		48654BFC115860E6575FCFAEC4552C4F /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Storage/Result.swift; sourceTree = "<group>"; };
 		493764F714C5490922AA49E78FBD4A4B /* ScheduledItemType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScheduledItemType.swift; path = RxSwift/Schedulers/Internal/ScheduledItemType.swift; sourceTree = "<group>"; };
 		49E1518D9CA82AA917F39F4A3DE3EC9C /* ToArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToArray.swift; path = RxSwift/Observables/ToArray.swift; sourceTree = "<group>"; };
+		4A1E597C362ABAC145BCFD00BFF1CE34 /* Pods-kekeRoomWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-kekeRoomWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		4A68CCC73BBFACE8DB92033C4A628D9B /* BatchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchRequest.swift; path = Sources/Storage/BatchRequest.swift; sourceTree = "<group>"; };
 		4BA2E3D1F30BA6831F410B1BDED0C5FF /* CurrentThreadScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrentThreadScheduler.swift; path = RxSwift/Schedulers/CurrentThreadScheduler.swift; sourceTree = "<group>"; };
+		4BD6F8283C9253D3DF73243C06591721 /* Pods_KekeRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KekeRoom.framework; path = "Pods-KekeRoom.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE4EDF81412AF54A629F33D8D6C688A /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Storage/Response.swift; sourceTree = "<group>"; };
 		4BFD0B13951E988F4E0881CBFA8A5C89 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
 		4C1CC2F03497AE034B1FCDBAE0FD0BCF /* list_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = list_notifier.cpp; path = Realm/ObjectStore/src/impl/list_notifier.cpp; sourceTree = "<group>"; };
@@ -930,7 +935,6 @@
 		519070061C2D993E5CE40CB05604FE44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51B606B8645A592ADF164D6E2C97C517 /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableConvertibleType.swift; path = RxSwift/ObservableConvertibleType.swift; sourceTree = "<group>"; };
 		51C3E809FAE5AC5E66E7C883940DB9A9 /* PublishRelay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishRelay.swift; path = RxCocoa/Traits/PublishRelay.swift; sourceTree = "<group>"; };
-		527CAE52365FD0910BCC45300C26DE1B /* Pods-KekeRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoom.release.xcconfig"; sourceTree = "<group>"; };
 		52A90FF668033224D9C41308CDAE730F /* RLMObjectBase_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Dynamic.h; path = include/RLMObjectBase_Dynamic.h; sourceTree = "<group>"; };
 		52BBB869BAD59E7ED43B447ADF04DF63 /* UITableView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Rx.swift"; path = "RxCocoa/iOS/UITableView+Rx.swift"; sourceTree = "<group>"; };
 		5307FF2CE8705B962D5DEFE0AD3BF437 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Storage/Engine.swift; sourceTree = "<group>"; };
@@ -960,9 +964,9 @@
 		5E906237F2CCB5E9642F58CFEC8CACB4 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		5EF251D3DEB5D5A4F1E917ECFC0B2B78 /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
 		5FD9D587AA871A182E281E9B259EEDAF /* RxCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxCocoa-dummy.m"; sourceTree = "<group>"; };
-		600456AFD5BE249B3438CCFCCFF21748 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CF8B276A67CF96D549849A143706C9 /* DelaySubscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelaySubscription.swift; path = RxSwift/Observables/DelaySubscription.swift; sourceTree = "<group>"; };
 		60D9D0F86A6B9BA891DA4CB1DCFD2272 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		6225D07E239C7AE292894DD416160694 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		624E49F6C9197DD49958A08539B9B146 /* Maybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Maybe.swift; path = RxSwift/Traits/Maybe.swift; sourceTree = "<group>"; };
 		628A5F436B07208C13301492E620CD79 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		62AA909EBC5EC449CCEAB4BB37E2EC5B /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
@@ -980,7 +984,6 @@
 		68E8FB7A70A2ECC83DA10498CF86563A /* ObservableConvertibleType+Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableConvertibleType+Signal.swift"; path = "RxCocoa/Traits/Signal/ObservableConvertibleType+Signal.swift"; sourceTree = "<group>"; };
 		698C45F9119FC7575B8B332A9417A6E9 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = RxSwift/Observables/Zip.swift; sourceTree = "<group>"; };
 		69BFEB9216650D950E6AF72A7096934F /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
-		69D65388BF834899F882B5682E668C33 /* Pods-KekeRoomWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KekeRoomWidget-umbrella.h"; sourceTree = "<group>"; };
 		6A2E09FA95221D91CE1AE5EA6C3F4EDB /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/Storage/Query.swift; sourceTree = "<group>"; };
 		6A46B03862E6258D500E59ADE133467C /* NotificationCenter+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+Rx.swift"; path = "RxCocoa/Foundation/NotificationCenter+Rx.swift"; sourceTree = "<group>"; };
 		6B013EA66554E8D72145BC569FDB45E8 /* object.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object.cpp; path = Realm/ObjectStore/src/object.cpp; sourceTree = "<group>"; };
@@ -998,6 +1001,7 @@
 		6FFEC1A88916D9B752FDCC239198D022 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		7085496FF34EF2AF4ADD7AD99C49274A /* PublishRelay+Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PublishRelay+Signal.swift"; path = "RxCocoa/Traits/Signal/PublishRelay+Signal.swift"; sourceTree = "<group>"; };
 		7085C14EE33C368D05CBB30EEFF0118A /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
+		70A711274BA93C84DBB8E89572B5A708 /* Pods-KekeRoom-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KekeRoom-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7106DE8BBA6A98A5E9BD42F822CBD79A /* Single.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Single.swift; path = RxSwift/Traits/Single.swift; sourceTree = "<group>"; };
 		716ED1BB218144F84A8DD76FBCD5B608 /* Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Range.swift; path = RxSwift/Observables/Range.swift; sourceTree = "<group>"; };
 		718440CC11689FD6CEE68CB7B235F234 /* RxPickerViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift; sourceTree = "<group>"; };
@@ -1006,9 +1010,8 @@
 		72052B2B61C978371C9CC33A81C9635F /* SubjectType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubjectType.swift; path = RxSwift/Subjects/SubjectType.swift; sourceTree = "<group>"; };
 		725486B9495C1DBA81D8C1D721B5F904 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxSwift/Deprecated.swift; sourceTree = "<group>"; };
 		7293613CD2357E8A09B35C1F21255BC1 /* TailRecursiveSink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TailRecursiveSink.swift; path = RxSwift/Observers/TailRecursiveSink.swift; sourceTree = "<group>"; };
+		729DDAF3A34222A8088AEA79CAF5547C /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E959844ADAB5CE721E2157CFB45C6D /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		73FE383894D3A6B6DBCC4F09F7ACAEBB /* Pods-KekeRoom-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KekeRoom-dummy.m"; sourceTree = "<group>"; };
-		74826C31B163D03F304E305EC316AB6A /* Pods-KekeRoom-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KekeRoom-frameworks.sh"; sourceTree = "<group>"; };
 		749F31204835934E340C894475896B8B /* UIView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Rx.swift"; path = "RxCocoa/iOS/UIView+Rx.swift"; sourceTree = "<group>"; };
 		750484601C63022D123BB23C05FC46B1 /* SortDescriptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SortDescriptor.swift; path = RealmSwift/SortDescriptor.swift; sourceTree = "<group>"; };
 		752BD3B5242D8C0BC1212640564F3D18 /* Just.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Just.swift; path = RxSwift/Observables/Just.swift; sourceTree = "<group>"; };
@@ -1034,7 +1037,6 @@
 		7D52F37B6C1F76A0D8285A6BCF45B3F3 /* uuid.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = uuid.cpp; path = Realm/ObjectStore/src/util/uuid.cpp; sourceTree = "<group>"; };
 		7DA932B5D649FAFF6858879F756F45BD /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		7DE81D5DE3F614152FF20B27E99EB8E6 /* ShareReplayScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareReplayScope.swift; path = RxSwift/Observables/ShareReplayScope.swift; sourceTree = "<group>"; };
-		7E4E81CC489AE9EB87F956A4007B780D /* Pods-KekeRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		7E53D56185B730774BC2132CFBB9AAEE /* CombineLatest+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+arity.swift"; path = "RxSwift/Observables/CombineLatest+arity.swift"; sourceTree = "<group>"; };
 		7E93ECAD4D7A751688813AC9E949DF5C /* NSError+RLMSync.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+RLMSync.m"; path = "Realm/NSError+RLMSync.m"; sourceTree = "<group>"; };
 		7F0E25502CD41F60DF65FB62F8C0FD31 /* ObserverBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverBase.swift; path = RxSwift/Observers/ObserverBase.swift; sourceTree = "<group>"; };
@@ -1047,7 +1049,6 @@
 		8230F284BE32D770D01D607A5BC47FD3 /* sync_permission.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_permission.cpp; path = Realm/ObjectStore/src/sync/sync_permission.cpp; sourceTree = "<group>"; };
 		826ABD3F66E62CC05AE5C11AC1967A05 /* RealmSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-umbrella.h"; sourceTree = "<group>"; };
 		827497CE2C06C8250EDE16F8095F269A /* RxCocoaRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoaRuntime.h; path = RxCocoa/Runtime/include/RxCocoaRuntime.h; sourceTree = "<group>"; };
-		82AD9B8A3BAEB4F8599823BC32EB7376 /* Pods-KekeRoomWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KekeRoomWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
 		82B61FB2F1CF33E574E558B458C304F8 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		83280559F77C6765A7026AB75339709F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8391A3B5CA5845205B013B37D8AC83E8 /* Catch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catch.swift; path = RxSwift/Observables/Catch.swift; sourceTree = "<group>"; };
@@ -1066,12 +1067,9 @@
 		8A28FA2B8B3ADEA8D7E65E7CFDBE1C25 /* RLMObjectBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMObjectBase.mm; path = Realm/RLMObjectBase.mm; sourceTree = "<group>"; };
 		8A4C9DF3F5B619F0CBB12BE65DE8D715 /* SharedSequence+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators.swift"; sourceTree = "<group>"; };
 		8B3DB1D3AD87CFE584DE5D3EBC433EEF /* binding_callback_thread_observer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = binding_callback_thread_observer.cpp; path = Realm/ObjectStore/src/binding_callback_thread_observer.cpp; sourceTree = "<group>"; };
-		8C06C2D393A3FC3A64BF57CC089D88A3 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C5D05FAE73DB7D4797FDFEA8BFA426C /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealmSwift.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8974B06C394D2591FD3D05AA97AE71 /* UISegmentedControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Rx.swift"; path = "RxCocoa/iOS/UISegmentedControl+Rx.swift"; sourceTree = "<group>"; };
 		8CCEEFE8C14A88924D838A8C9CC519EE /* Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = RealmSwift/Aliases.swift; sourceTree = "<group>"; };
 		8D147251F2E021F8EC493C755DFB6D4D /* NSObject+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx.swift"; path = "RxCocoa/Foundation/NSObject+Rx.swift"; sourceTree = "<group>"; };
-		8D50AB8F125764E7367EFFD2BBE7A891 /* Pods-KekeRoom-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KekeRoom-resources.sh"; sourceTree = "<group>"; };
 		8D7146B1E5BAE11F3B84EC7C2C02DD29 /* RLMSyncManager_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager_Private.h; path = include/RLMSyncManager_Private.h; sourceTree = "<group>"; };
 		8DBC4282E34FEF1A3B9C39F3D7DB2311 /* RxCollectionViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceType.swift; path = RxCocoa/iOS/Protocols/RxCollectionViewDataSourceType.swift; sourceTree = "<group>"; };
 		90066AC0E567943D589BB40F037CA328 /* RxCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RxCocoa.modulemap; sourceTree = "<group>"; };
@@ -1102,7 +1100,6 @@
 		9BFF2BF57141F358CCF9005998269CDC /* ConcurrentMainScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConcurrentMainScheduler.swift; path = RxSwift/Schedulers/ConcurrentMainScheduler.swift; sourceTree = "<group>"; };
 		9C38FAA59340CB7E2499D15996B221FC /* ApplicationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationOptions.swift; path = Sources/Storage/ApplicationOptions.swift; sourceTree = "<group>"; };
 		9C8035CCE71D2608A4F57174225A46D2 /* ObserveOn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserveOn.swift; path = RxSwift/Observables/ObserveOn.swift; sourceTree = "<group>"; };
-		9D4950B825879D7CB11284DF7535B489 /* Pods-KekeRoomWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoomWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		9D9C9EB63BBADDFB6100313F859C4A4E /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		9E719B68B198FF395C4BBDB441379A55 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
 		9ECD601A16D1EBCADEAD9D4A4B16BB77 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -1134,8 +1131,10 @@
 		AC4524600B84B73CD993264578C97F77 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		AC46F45CB1BFC8B10043FC320B6877DE /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Platform/DataStructures/Queue.swift; sourceTree = "<group>"; };
 		AD66C6484E71E5D41653FF6B40FDA6FE /* UITabBar+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBar+Rx.swift"; path = "RxCocoa/iOS/UITabBar+Rx.swift"; sourceTree = "<group>"; };
+		AD671D6971913471FB149954D58C9011 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE09877E491125BE8A9AF90E20FCA5E9 /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalSchedulerTimeConverter.swift; path = RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
 		AED9D6DA7312AD687506E63AA7DCC4E4 /* Binder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binder.swift; path = RxCocoa/Common/Binder.swift; sourceTree = "<group>"; };
+		AF0F0AE43FA5C3338DFFE883D0D15D1B /* Pods-kekeRoomWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-kekeRoomWidget-resources.sh"; sourceTree = "<group>"; };
 		AF33613A76CCBA31AD3E483BDDD43E64 /* keychain_helper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = keychain_helper.cpp; path = Realm/ObjectStore/src/impl/apple/keychain_helper.cpp; sourceTree = "<group>"; };
 		AF3AD0F93853DC575579215E687936B7 /* Empty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Empty.swift; path = RxSwift/Observables/Empty.swift; sourceTree = "<group>"; };
 		AFA2AC2F30D989A8FFF226A2BFA60994 /* ObservableConvertibleType+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableConvertibleType+Driver.swift"; path = "RxCocoa/Traits/Driver/ObservableConvertibleType+Driver.swift"; sourceTree = "<group>"; };
@@ -1152,22 +1151,23 @@
 		B3324F81113277A9CE4C7AF988B0CE16 /* RLMSyncUser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMSyncUser.mm; path = Realm/RLMSyncUser.mm; sourceTree = "<group>"; };
 		B33B5A9D26C4B7223BD471B4F05D80DB /* RLMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMConstants.m; path = Realm/RLMConstants.m; sourceTree = "<group>"; };
 		B486FF51731AC218026D7246E077403F /* Null.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Null.swift; path = Sources/Storage/DataType/Null.swift; sourceTree = "<group>"; };
+		B4AE5D4C1AE464D4D13170D37E4BBEFE /* Pods-KekeRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoom.release.xcconfig"; sourceTree = "<group>"; };
 		B4F5AABB5D054583B031CB98FDAF989B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		B503B9417EBD0E85546B7A7417C9F901 /* RxTabBarDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarDelegateProxy.swift; sourceTree = "<group>"; };
 		B525DE046204DFE93D120B187A81E7D4 /* NSTextStorage+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextStorage+Rx.swift"; path = "RxCocoa/iOS/NSTextStorage+Rx.swift"; sourceTree = "<group>"; };
+		B599521BC2CE968CA1562E75549ED498 /* Pods-KekeRoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KekeRoom-umbrella.h"; sourceTree = "<group>"; };
 		B65F2B67024246C71AEED6096997F90A /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = RxSwift/Observables/Timer.swift; sourceTree = "<group>"; };
 		B6BF22A0075707AC7C5D460C1B6CF799 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		B6D330035C291B7A14B69370575C3297 /* Pods-KekeRoomWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KekeRoomWidget-acknowledgements.plist"; sourceTree = "<group>"; };
 		B77326BC1A601AA5F2F16F3A24569B34 /* RLMResults_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults_Private.h; path = include/RLMResults_Private.h; sourceTree = "<group>"; };
 		B7B661C926A552A5DEE5E78977AC2665 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/Storage/Value.swift; sourceTree = "<group>"; };
 		B8B6A788A6570D17BCE02BDE9C62BCF6 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		B909E7D87F8039AF2DEA9BF9AD69E72E /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
 		B92AF610679EA2B62BA777633FD2F88C /* LeanCloud.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeanCloud.xcconfig; sourceTree = "<group>"; };
 		B974B67168971C54CAFA1D1D152BD5A1 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		B9D089CD4F40E5395065BEE23EA05771 /* Pods-kekeRoomWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-kekeRoomWidget-dummy.m"; sourceTree = "<group>"; };
 		B9F54E81D867AFC0389A47BA0FD57F3A /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
 		B9F9E817D8F78FF9262441B401089F70 /* NSError+RLMSync.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+RLMSync.h"; path = "include/NSError+RLMSync.h"; sourceTree = "<group>"; };
 		B9FCA1FDB94F9286AF736B005B2973DD /* RLMJSONModels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMJSONModels.m; path = Realm/RLMJSONModels.m; sourceTree = "<group>"; };
-		BA7F6115D058FB543A790B4DC643248B /* Pods_KekeRoomWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KekeRoomWidget.framework; path = "Pods-KekeRoomWidget.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE97A26668276E496AA3CC3E065DFB0 /* RLMSyncSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncSession.h; path = include/RLMSyncSession.h; sourceTree = "<group>"; };
 		BB0431A0FA2A7F2D4A6F305779B93297 /* object_schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_schema.cpp; path = Realm/ObjectStore/src/object_schema.cpp; sourceTree = "<group>"; };
 		BCB16F6CC8DA6A02715F75D939AF9EAE /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Reduce.swift; sourceTree = "<group>"; };
@@ -1189,6 +1189,7 @@
 		C258598C9829E5D15E1389100355A5DA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		C3C8E1F09D1DD4D6B0521ECE8C7EDA45 /* GroupBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupBy.swift; path = RxSwift/Observables/GroupBy.swift; sourceTree = "<group>"; };
 		C3EC715D1634E89DA924E8BC24B6CA68 /* _RXDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXDelegateProxy.h; path = RxCocoa/Runtime/include/_RXDelegateProxy.h; sourceTree = "<group>"; };
+		C44C4238B4634EFCB2E78B55039DE20A /* Pods-kekeRoomWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-kekeRoomWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		C5B5987F499C84769182AF9F51DA35D8 /* ItemEvents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemEvents.swift; path = RxCocoa/iOS/Events/ItemEvents.swift; sourceTree = "<group>"; };
 		C6B5DD12A6E8562E284A821CDCA03404 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		C76D71FF013F88B70E65D7ECCC2AD4BC /* RLMObjectStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectStore.h; path = include/RLMObjectStore.h; sourceTree = "<group>"; };
@@ -1220,9 +1221,9 @@
 		D5D8823B451814DA1461C398AAD4B850 /* ControlEvent+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlEvent+Driver.swift"; sourceTree = "<group>"; };
 		D5DCEC9E2619D103294FCC29D8ED7C64 /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		D6215B67DED83F6754CCFDBC08CAA257 /* Skip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Skip.swift; path = RxSwift/Observables/Skip.swift; sourceTree = "<group>"; };
-		D66123D856C6B9B495B95E203E6657B0 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66824B7A6CFB9E839A732F36F826331 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = RxSwift/Observables/Buffer.swift; sourceTree = "<group>"; };
 		D71AEDFD004630D29DEED46759EB1ED2 /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Sources/Storage/Utility.swift; sourceTree = "<group>"; };
+		D7D767F7F6FC695E33AB02BD522BE945 /* Pods-KekeRoom.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-KekeRoom.modulemap"; sourceTree = "<group>"; };
 		D828F7902D07408FD355EA8B131A79EA /* RLMArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray.h; path = include/RLMArray.h; sourceTree = "<group>"; };
 		D908E7437A43419D22C9F34B65FF2B0B /* realm_coordinator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = realm_coordinator.cpp; path = Realm/ObjectStore/src/impl/realm_coordinator.cpp; sourceTree = "<group>"; };
 		D93A11606C971B0E29872DE15F8B9D74 /* NSObject+Rx+KVORepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Rx+KVORepresentable.swift"; path = "RxCocoa/Foundation/NSObject+Rx+KVORepresentable.swift"; sourceTree = "<group>"; };
@@ -1233,9 +1234,8 @@
 		DBF874025AC6B59C604794BC10E790BF /* Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rx.swift; path = RxSwift/Rx.swift; sourceTree = "<group>"; };
 		DCA71F4078E900A150B63D3F726B87DD /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		DCDA0B37E2E572B92B6CC57E78821F2B /* UIWebView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWebView+Rx.swift"; path = "RxCocoa/iOS/UIWebView+Rx.swift"; sourceTree = "<group>"; };
-		DD6D86C42D334FAC86B5554D807D6CA4 /* Pods-KekeRoom-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KekeRoom-umbrella.h"; sourceTree = "<group>"; };
-		DE098D26945D30858650145B10A405F7 /* Pods-KekeRoom-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KekeRoom-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE6971BABF32808D19CFDA1EDC06915D /* RLMSyncCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncCredentials.h; path = include/RLMSyncCredentials.h; sourceTree = "<group>"; };
+		DFAB1DA536AD5795BD710AE5371DA12F /* Pods-KekeRoom-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KekeRoom-frameworks.sh"; sourceTree = "<group>"; };
 		DFC28C22B8ED36C99B7A4248FAB44A16 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E03C58E683EF33E497C2FC49312EECFB /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		E03F8A834D6C01F60019155D07A5C8A6 /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
@@ -1247,6 +1247,7 @@
 		E2A1CD478713CC0B5A4CC503B0176571 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E330746F90A4D81967B9DB937943F73D /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		E34797CE6A116B33C89DE972111F7F2D /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Platform/DataStructures/PriorityQueue.swift; sourceTree = "<group>"; };
+		E37B07A5115DB05ED1CF21E5225CF157 /* LeanCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeanCloud.framework; path = LeanCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4195C58989C60729DA5D05EBDE7FFB0 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = RealmSwift/Schema.swift; sourceTree = "<group>"; };
 		E59D11E8F43D13F5CD31E2CBA56A48D4 /* ControlProperty+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlProperty+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlProperty+Driver.swift"; sourceTree = "<group>"; };
 		E6014A269611F267456457BCEDCEF4A7 /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = RxSwift/Observables/Window.swift; sourceTree = "<group>"; };
@@ -1254,15 +1255,16 @@
 		E8F54BF302D668344B836E0B5F402FA3 /* RLMProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMProperty.mm; path = Realm/RLMProperty.mm; sourceTree = "<group>"; };
 		E9009F09AE701FD33D03C95BF3EB2270 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = RxSwift/Disposable.swift; sourceTree = "<group>"; };
 		E94801DD369A165CDF1F5499A7ED0E9C /* ImmediateSchedulerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmediateSchedulerType.swift; path = RxSwift/ImmediateSchedulerType.swift; sourceTree = "<group>"; };
-		E94B07EAB6AB85FEB684DBC93921C8E8 /* Pods_KekeRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KekeRoom.framework; path = "Pods-KekeRoom.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6CD311D11FED184FE7244B0D2A47BC /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = RxCocoa/Foundation/Logging.swift; sourceTree = "<group>"; };
 		EAD438BB1289512A85CAB0AE0B736794 /* UIPageControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageControl+Rx.swift"; path = "RxCocoa/iOS/UIPageControl+Rx.swift"; sourceTree = "<group>"; };
 		EB30A06541E654740E88FE69B9A295CE /* Disposables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposables.swift; path = RxSwift/Disposables/Disposables.swift; sourceTree = "<group>"; };
 		EEB324D55ED128E1216AC7A9BCD29080 /* _RXDelegateProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _RXDelegateProxy.m; path = RxCocoa/Runtime/_RXDelegateProxy.m; sourceTree = "<group>"; };
 		EED5EBFA0CB1088A8B8F9FE188599C12 /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
+		EF8E372109418EDF49B6FB10263E6C4C /* Pods-KekeRoom-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KekeRoom-resources.sh"; sourceTree = "<group>"; };
 		EFA4A1F917BC224BB493774C33DA0A02 /* UITextView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Rx.swift"; path = "RxCocoa/iOS/UITextView+Rx.swift"; sourceTree = "<group>"; };
 		F023194941B596C3296838ABF1D62CEA /* RLMRealm+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealm+Sync.mm"; path = "Realm/RLMRealm+Sync.mm"; sourceTree = "<group>"; };
 		F0633377EA597ECE5569347122FE56AD /* object_notifier.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = object_notifier.cpp; path = Realm/ObjectStore/src/impl/object_notifier.cpp; sourceTree = "<group>"; };
+		F0651389C6DF507C1BD3C47975FADFF1 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Realm.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BE0F73183561BF94AD06554B3F7DDB /* _RXKVOObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXKVOObserver.h; path = RxCocoa/Runtime/include/_RXKVOObserver.h; sourceTree = "<group>"; };
 		F1600C3D03F7949382A4D0B1495FA94A /* CQLClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CQLClient.swift; path = Sources/Storage/CQLClient.swift; sourceTree = "<group>"; };
 		F17077960E4169E86B7FE4BA28C3EDA8 /* RLMThreadSafeReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMThreadSafeReference.h; path = include/RLMThreadSafeReference.h; sourceTree = "<group>"; };
@@ -1276,8 +1278,8 @@
 		F3A88CEDAC2571F28C9325DC248D48C4 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		F3B855F4A464ADBEE4BF010175D8FF7F /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
 		F4116F30C0A84CA18BB80E2DFA0209C1 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Rx.swift"; path = "RxCocoa/iOS/UIScrollView+Rx.swift"; sourceTree = "<group>"; };
+		F469A2925FE8251C9413F21E64BB5E40 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RealmSwift.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BC38788BC50A0D332A1D3F5E3E9D46 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4CF166D73D854D79B485888C7C57AEE /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D5A85AFA72B16FAFBFD6171890DBAD /* RLMRealmConfiguration+Sync.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = "RLMRealmConfiguration+Sync.mm"; path = "Realm/RLMRealmConfiguration+Sync.mm"; sourceTree = "<group>"; };
 		F50173B920FE2BD4C75B66C5D6B6B3C5 /* ACL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ACL.swift; path = Sources/Storage/DataType/ACL.swift; sourceTree = "<group>"; };
 		F54E4C83FA278517A05451E00171A3F6 /* RLMPredicateUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMPredicateUtil.mm; path = Realm/RLMPredicateUtil.mm; sourceTree = "<group>"; };
@@ -1290,19 +1292,17 @@
 		F74A1A1979811A37FA36376F4D0F090F /* sync_config.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_config.cpp; path = Realm/ObjectStore/src/sync/sync_config.cpp; sourceTree = "<group>"; };
 		F7EE10320EC4FA5E17C0878787567D0D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		F875067EE5F78B507BEA5DD571C340FF /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = RxSwift/Observable.swift; sourceTree = "<group>"; };
-		F878F8B75A246F3C352190218490A4AF /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxCocoa.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F93E9944728BCFF481165CA4A588720D /* sync_session.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sync_session.cpp; path = Realm/ObjectStore/src/sync/sync_session.cpp; sourceTree = "<group>"; };
 		F96C1ADDDC2B6DF1037FF44C76AC4973 /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Platform/DataStructures/Bag.swift; sourceTree = "<group>"; };
 		F9829352299AD2A40291409F7A5F40B8 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/Storage/DataType/Data.swift; sourceTree = "<group>"; };
 		F9AE66690C809E1148D457A70531A16D /* shared_realm.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_realm.cpp; path = Realm/ObjectStore/src/shared_realm.cpp; sourceTree = "<group>"; };
 		FA5DB5DEAA093F0AD3821E0FA750E2E7 /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
+		FA628E346753360702980F351CDC4B00 /* Pods-KekeRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KekeRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6A29FD8D304093FD2A7043C38648EA /* RxPickerViewAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewAdapter.swift; path = RxCocoa/iOS/DataSources/RxPickerViewAdapter.swift; sourceTree = "<group>"; };
 		FA6D5B58681C36627CBE74BEA7F4E14F /* UIDatePicker+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Rx.swift"; path = "RxCocoa/iOS/UIDatePicker+Rx.swift"; sourceTree = "<group>"; };
 		FA8E05417090EDFAC1ABF5AA04F0265A /* Producer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Producer.swift; path = RxSwift/Observables/Producer.swift; sourceTree = "<group>"; };
 		FC247768D4F53F6D6F772195573D317B /* RLMSyncManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMSyncManager.h; path = include/RLMSyncManager.h; sourceTree = "<group>"; };
 		FCD152FCB711381AA3BCA920E0250FE1 /* PrimitiveSequence+Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PrimitiveSequence+Zip+arity.swift"; path = "RxSwift/Traits/PrimitiveSequence+Zip+arity.swift"; sourceTree = "<group>"; };
-		FD7BA9A9858A05C018D6F6B8C79FE790 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDD27A7F2EC0606013F41AACDB226F14 /* Pods-KekeRoom-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KekeRoom-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FEA572791FC23950B0DEA514CB5CAD04 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = RxSwift/Observables/Error.swift; sourceTree = "<group>"; };
 		FEBE926C34CAD4BA1B232C97CBD0A7AC /* collection_notifications.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = collection_notifications.cpp; path = Realm/ObjectStore/src/collection_notifications.cpp; sourceTree = "<group>"; };
 		FEC7CA6ADEB6914E21059189A0F26062 /* TextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInput.swift; path = RxCocoa/Common/TextInput.swift; sourceTree = "<group>"; };
@@ -1313,6 +1313,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0128700D7C45BCFDA91041ABE3DE4D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6A4C9E9B678ED5F2CF7AE959A229EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AF17DC534250BD40B9E13F5D6D3A337 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1336,14 +1344,6 @@
 			files = (
 				C7EA069538FDADE6E221C7EC6BB42603 /* Foundation.framework in Frameworks */,
 				7934D7618A8B40053FECBCB580D26F98 /* RxSwift.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C5EC71CA9A9D9D679D8D1D45CEE6164 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4707AE11BFCCD126206AF44E2F44F57B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1391,6 +1391,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BCA547BDB25C6337FC105846F873A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0327F3DF1B8EA9CDD1D3360A65E2A0E3 /* Pods-KekeRoom */,
+				150DB4B25D93B0E6C68EDC17DEF0A82F /* Pods-kekeRoomWidget */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0327F3DF1B8EA9CDD1D3360A65E2A0E3 /* Pods-KekeRoom */ = {
+			isa = PBXGroup;
+			children = (
+				2B4DA6F8ACF3BF39641F67DE6839F119 /* Info.plist */,
+				D7D767F7F6FC695E33AB02BD522BE945 /* Pods-KekeRoom.modulemap */,
+				70A711274BA93C84DBB8E89572B5A708 /* Pods-KekeRoom-acknowledgements.markdown */,
+				4058C85E015DDA15F188411DAF1B5298 /* Pods-KekeRoom-acknowledgements.plist */,
+				03252B53F07EA7C28C1CBC6FAD0CE06F /* Pods-KekeRoom-dummy.m */,
+				DFAB1DA536AD5795BD710AE5371DA12F /* Pods-KekeRoom-frameworks.sh */,
+				EF8E372109418EDF49B6FB10263E6C4C /* Pods-KekeRoom-resources.sh */,
+				B599521BC2CE968CA1562E75549ED498 /* Pods-KekeRoom-umbrella.h */,
+				FA628E346753360702980F351CDC4B00 /* Pods-KekeRoom.debug.xcconfig */,
+				B4AE5D4C1AE464D4D13170D37E4BBEFE /* Pods-KekeRoom.release.xcconfig */,
+			);
+			name = "Pods-KekeRoom";
+			path = "Target Support Files/Pods-KekeRoom";
+			sourceTree = "<group>";
+		};
 		0877203D7D8CFB49B090C7AF7B18F5ED /* SnapKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1434,20 +1461,21 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		139A7F7CE9068FCC996476EDBDA6A4E6 /* Products */ = {
+		150DB4B25D93B0E6C68EDC17DEF0A82F /* Pods-kekeRoomWidget */ = {
 			isa = PBXGroup;
 			children = (
-				8C06C2D393A3FC3A64BF57CC089D88A3 /* Alamofire.framework */,
-				1CF04394CF29D6BA2F60C9A59CABAF45 /* LeanCloud.framework */,
-				E94B07EAB6AB85FEB684DBC93921C8E8 /* Pods_KekeRoom.framework */,
-				BA7F6115D058FB543A790B4DC643248B /* Pods_KekeRoomWidget.framework */,
-				D66123D856C6B9B495B95E203E6657B0 /* Realm.framework */,
-				8C5D05FAE73DB7D4797FDFEA8BFA426C /* RealmSwift.framework */,
-				F878F8B75A246F3C352190218490A4AF /* RxCocoa.framework */,
-				600456AFD5BE249B3438CCFCCFF21748 /* RxSwift.framework */,
-				F4CF166D73D854D79B485888C7C57AEE /* SnapKit.framework */,
+				AD671D6971913471FB149954D58C9011 /* Info.plist */,
+				3BF7F4EBEE6DFF18B464309875CAD22A /* Pods-kekeRoomWidget.modulemap */,
+				32055A76DDF50118153B98389EFE0565 /* Pods-kekeRoomWidget-acknowledgements.markdown */,
+				4A1E597C362ABAC145BCFD00BFF1CE34 /* Pods-kekeRoomWidget-acknowledgements.plist */,
+				B9D089CD4F40E5395065BEE23EA05771 /* Pods-kekeRoomWidget-dummy.m */,
+				AF0F0AE43FA5C3338DFFE883D0D15D1B /* Pods-kekeRoomWidget-resources.sh */,
+				35E2F389C8337680FCFF1C536DCCAC9B /* Pods-kekeRoomWidget-umbrella.h */,
+				C44C4238B4634EFCB2E78B55039DE20A /* Pods-kekeRoomWidget.debug.xcconfig */,
+				006EDAB78FE1BEAB14CF4FBDE1C3FF6D /* Pods-kekeRoomWidget.release.xcconfig */,
 			);
-			name = Products;
+			name = "Pods-kekeRoomWidget";
+			path = "Target Support Files/Pods-kekeRoomWidget";
 			sourceTree = "<group>";
 		};
 		1CF2FBE177F891D72B568A6A33A939A4 /* Support Files */ = {
@@ -1490,33 +1518,6 @@
 				0877203D7D8CFB49B090C7AF7B18F5ED /* SnapKit */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		50794161A29F1653779FED7F5EA9E52F /* Pods-KekeRoom */ = {
-			isa = PBXGroup;
-			children = (
-				FD7BA9A9858A05C018D6F6B8C79FE790 /* Info.plist */,
-				36497229DBD35EBEFE7B252F9888654A /* Pods-KekeRoom.modulemap */,
-				FDD27A7F2EC0606013F41AACDB226F14 /* Pods-KekeRoom-acknowledgements.markdown */,
-				DE098D26945D30858650145B10A405F7 /* Pods-KekeRoom-acknowledgements.plist */,
-				73FE383894D3A6B6DBCC4F09F7ACAEBB /* Pods-KekeRoom-dummy.m */,
-				74826C31B163D03F304E305EC316AB6A /* Pods-KekeRoom-frameworks.sh */,
-				8D50AB8F125764E7367EFFD2BBE7A891 /* Pods-KekeRoom-resources.sh */,
-				DD6D86C42D334FAC86B5554D807D6CA4 /* Pods-KekeRoom-umbrella.h */,
-				7E4E81CC489AE9EB87F956A4007B780D /* Pods-KekeRoom.debug.xcconfig */,
-				527CAE52365FD0910BCC45300C26DE1B /* Pods-KekeRoom.release.xcconfig */,
-			);
-			name = "Pods-KekeRoom";
-			path = "Target Support Files/Pods-KekeRoom";
-			sourceTree = "<group>";
-		};
-		53E3EE89705492D84BFA3BFE0114B811 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				50794161A29F1653779FED7F5EA9E52F /* Pods-KekeRoom */,
-				5DCAB5B6F31136C934DCA854E1F5F3F9 /* Pods-KekeRoomWidget */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		5C2A68C03E89F58B99B4620A7B83852D /* Support Files */ = {
@@ -1576,23 +1577,6 @@
 			name = Storage;
 			sourceTree = "<group>";
 		};
-		5DCAB5B6F31136C934DCA854E1F5F3F9 /* Pods-KekeRoomWidget */ = {
-			isa = PBXGroup;
-			children = (
-				16363F7C69EC61DD2A1541EF6CE48D11 /* Info.plist */,
-				22D9E3822F5041D9462C5A871A9BF282 /* Pods-KekeRoomWidget.modulemap */,
-				82AD9B8A3BAEB4F8599823BC32EB7376 /* Pods-KekeRoomWidget-acknowledgements.markdown */,
-				B6D330035C291B7A14B69370575C3297 /* Pods-KekeRoomWidget-acknowledgements.plist */,
-				14B0615DB2E59C8162DBF5DE4AA540A3 /* Pods-KekeRoomWidget-dummy.m */,
-				169975A73EC1293156D06E9705D7340D /* Pods-KekeRoomWidget-resources.sh */,
-				69D65388BF834899F882B5682E668C33 /* Pods-KekeRoomWidget-umbrella.h */,
-				9D4950B825879D7CB11284DF7535B489 /* Pods-KekeRoomWidget.debug.xcconfig */,
-				13FC17AB8B356012630D9DEE933D847E /* Pods-KekeRoomWidget.release.xcconfig */,
-			);
-			name = "Pods-KekeRoomWidget";
-			path = "Target Support Files/Pods-KekeRoomWidget";
-			sourceTree = "<group>";
-		};
 		608674E2994D53F6F56688C42DA6AFA3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1636,8 +1620,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				767E9C49730AA63144731A17EAF9E5AE /* Frameworks */,
 				42D524BCC3E1AD778EED457FABF91F26 /* Pods */,
-				139A7F7CE9068FCC996476EDBDA6A4E6 /* Products */,
-				53E3EE89705492D84BFA3BFE0114B811 /* Targets Support Files */,
+				E3BE33FD549050B27EF94E87578B7CF9 /* Products */,
+				02BCA547BDB25C6337FC105846F873A3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2099,6 +2083,22 @@
 			name = Headers;
 			sourceTree = "<group>";
 		};
+		E3BE33FD549050B27EF94E87578B7CF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6225D07E239C7AE292894DD416160694 /* Alamofire.framework */,
+				E37B07A5115DB05ED1CF21E5225CF157 /* LeanCloud.framework */,
+				4BD6F8283C9253D3DF73243C06591721 /* Pods_KekeRoom.framework */,
+				270528C2D686658CDF138CF685199C17 /* Pods_kekeRoomWidget.framework */,
+				F0651389C6DF507C1BD3C47975FADFF1 /* Realm.framework */,
+				F469A2925FE8251C9413F21E64BB5E40 /* RealmSwift.framework */,
+				34D73E1FF3B2580B4BD925B5078725AC /* RxCocoa.framework */,
+				24C71769A7B7BDC27D2B1459BC9AA329 /* RxSwift.framework */,
+				729DDAF3A34222A8088AEA79CAF5547C /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EAA94C2382BDF110AC099D63D382E76F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2196,14 +2196,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		652058C4A7A0C42869CF63C450F62F88 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F731B3C47193AC5E7049620524F0631F /* Pods-KekeRoomWidget-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2278,6 +2270,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8FBFF3A39A841329C2AF679574E919D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D3A175308285821311B045A6A9ACC3 /* Pods-kekeRoomWidget-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F76776EB19D0C7CCB65802615A201CEA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2311,7 +2311,7 @@
 			);
 			name = RxSwift;
 			productName = RxSwift;
-			productReference = 600456AFD5BE249B3438CCFCCFF21748 /* RxSwift.framework */;
+			productReference = 24C71769A7B7BDC27D2B1459BC9AA329 /* RxSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		1A53E501F99DFB3BA77AF40A7C6171D0 /* Realm */ = {
@@ -2330,7 +2330,7 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = D66123D856C6B9B495B95E203E6657B0 /* Realm.framework */;
+			productReference = F0651389C6DF507C1BD3C47975FADFF1 /* Realm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		2C19D0BE3AB4D4FAAFE69A7A95C6FE1C /* LeanCloud */ = {
@@ -2348,7 +2348,7 @@
 			);
 			name = LeanCloud;
 			productName = LeanCloud;
-			productReference = 1CF04394CF29D6BA2F60C9A59CABAF45 /* LeanCloud.framework */;
+			productReference = E37B07A5115DB05ED1CF21E5225CF157 /* LeanCloud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3C61812C3B0A03FCC1D97E5525C3E7F0 /* RealmSwift */ = {
@@ -2366,7 +2366,28 @@
 			);
 			name = RealmSwift;
 			productName = RealmSwift;
-			productReference = 8C5D05FAE73DB7D4797FDFEA8BFA426C /* RealmSwift.framework */;
+			productReference = F469A2925FE8251C9413F21E64BB5E40 /* RealmSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F415B6F768D42A8D54E44F7D4009E4B /* Pods-kekeRoomWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279FBBAF81079AAE793B3F6627D27D25 /* Build configuration list for PBXNativeTarget "Pods-kekeRoomWidget" */;
+			buildPhases = (
+				8F95C12280BDE95ED814EA62E4554DF9 /* Sources */,
+				0128700D7C45BCFDA91041ABE3DE4D6F /* Frameworks */,
+				E8FBFF3A39A841329C2AF679574E919D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F68AD0CB4DE75DC9E881FEC756372986 /* PBXTargetDependency */,
+				51B882D2784FC88488C7EAEA83AA57E4 /* PBXTargetDependency */,
+				03986307279630CDE0E17DB109687869 /* PBXTargetDependency */,
+				82864EF387B4C37C4A5F7B7907F8B9DB /* PBXTargetDependency */,
+			);
+			name = "Pods-kekeRoomWidget";
+			productName = "Pods-kekeRoomWidget";
+			productReference = 270528C2D686658CDF138CF685199C17 /* Pods_kekeRoomWidget.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -2383,7 +2404,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 8C06C2D393A3FC3A64BF57CC089D88A3 /* Alamofire.framework */;
+			productReference = 6225D07E239C7AE292894DD416160694 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9B797210D2CAE90B0D67DDB97D5223EC /* SnapKit */ = {
@@ -2400,7 +2421,7 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = F4CF166D73D854D79B485888C7C57AEE /* SnapKit.framework */;
+			productReference = 729DDAF3A34222A8088AEA79CAF5547C /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AF0C2FD9A5D56757F8138218A6391447 /* RxCocoa */ = {
@@ -2418,7 +2439,7 @@
 			);
 			name = RxCocoa;
 			productName = RxCocoa;
-			productReference = F878F8B75A246F3C352190218490A4AF /* RxCocoa.framework */;
+			productReference = 34D73E1FF3B2580B4BD925B5078725AC /* RxCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CEFDD55D8DF1F55D45379116ECE19DC5 /* Pods-KekeRoom */ = {
@@ -2442,28 +2463,7 @@
 			);
 			name = "Pods-KekeRoom";
 			productName = "Pods-KekeRoom";
-			productReference = E94B07EAB6AB85FEB684DBC93921C8E8 /* Pods_KekeRoom.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E9E726F1F37193CB46F5F73EB9FCB6B6 /* Pods-KekeRoomWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0849710514C32FEDBC093E90C7F794BA /* Build configuration list for PBXNativeTarget "Pods-KekeRoomWidget" */;
-			buildPhases = (
-				A60CB2C0BBD7953577CCE04EC412A200 /* Sources */,
-				8C5EC71CA9A9D9D679D8D1D45CEE6164 /* Frameworks */,
-				652058C4A7A0C42869CF63C450F62F88 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE8390A5FCCCF90685466424ADDC98D6 /* PBXTargetDependency */,
-				51546E2A50E59E1DEFAC09ABBBFD9A5F /* PBXTargetDependency */,
-				3C90B0CD52D995FF091B1DCE4DE8B143 /* PBXTargetDependency */,
-				9221446B2A330729AEB6A726CC5A43B5 /* PBXTargetDependency */,
-			);
-			name = "Pods-KekeRoomWidget";
-			productName = "Pods-KekeRoomWidget";
-			productReference = BA7F6115D058FB543A790B4DC643248B /* Pods_KekeRoomWidget.framework */;
+			productReference = 4BD6F8283C9253D3DF73243C06591721 /* Pods_KekeRoom.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2483,14 +2483,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 139A7F7CE9068FCC996476EDBDA6A4E6 /* Products */;
+			productRefGroup = E3BE33FD549050B27EF94E87578B7CF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
 				2C19D0BE3AB4D4FAAFE69A7A95C6FE1C /* LeanCloud */,
 				CEFDD55D8DF1F55D45379116ECE19DC5 /* Pods-KekeRoom */,
-				E9E726F1F37193CB46F5F73EB9FCB6B6 /* Pods-KekeRoomWidget */,
+				3F415B6F768D42A8D54E44F7D4009E4B /* Pods-kekeRoomWidget */,
 				1A53E501F99DFB3BA77AF40A7C6171D0 /* Realm */,
 				3C61812C3B0A03FCC1D97E5525C3E7F0 /* RealmSwift */,
 				AF0C2FD9A5D56757F8138218A6391447 /* RxCocoa */,
@@ -2638,11 +2638,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A60CB2C0BBD7953577CCE04EC412A200 /* Sources */ = {
+		8F95C12280BDE95ED814EA62E4554DF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FB63526065D688C3BC908C681BB7655 /* Pods-KekeRoomWidget-dummy.m in Sources */,
+				8FABD12A9E95D20B4D98C741B1B8A382 /* Pods-kekeRoomWidget-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3020,6 +3020,12 @@
 			target = 2C19D0BE3AB4D4FAAFE69A7A95C6FE1C /* LeanCloud */;
 			targetProxy = D970894BC6B3D3BB1EED29C4ACE6B32E /* PBXContainerItemProxy */;
 		};
+		03986307279630CDE0E17DB109687869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Realm;
+			target = 1A53E501F99DFB3BA77AF40A7C6171D0 /* Realm */;
+			targetProxy = 088074D57B25F2A25567195E806A409F /* PBXContainerItemProxy */;
+		};
 		24533EBE62FDE71FB6F17DCEA620A5D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RxCocoa;
@@ -3032,29 +3038,29 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = 76BB2DE78DEC1369A3039DA0DD59C58B /* PBXContainerItemProxy */;
 		};
-		3C90B0CD52D995FF091B1DCE4DE8B143 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Realm;
-			target = 1A53E501F99DFB3BA77AF40A7C6171D0 /* Realm */;
-			targetProxy = 670E5844B4F88D46C8F27A71984E1F39 /* PBXContainerItemProxy */;
-		};
-		51546E2A50E59E1DEFAC09ABBBFD9A5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LeanCloud;
-			target = 2C19D0BE3AB4D4FAAFE69A7A95C6FE1C /* LeanCloud */;
-			targetProxy = E21D1EFF5F926234110EFF15E2071896 /* PBXContainerItemProxy */;
-		};
 		516DD5F0F7FF098B5BD9CE43447BEFF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RxSwift;
 			target = 0B93ECF31ABF753EE2D96F71B24CE026 /* RxSwift */;
 			targetProxy = 073849E5E1A54457AF9F49700B1A0951 /* PBXContainerItemProxy */;
 		};
+		51B882D2784FC88488C7EAEA83AA57E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeanCloud;
+			target = 2C19D0BE3AB4D4FAAFE69A7A95C6FE1C /* LeanCloud */;
+			targetProxy = 293AF0704737BBC0094839C1981311DB /* PBXContainerItemProxy */;
+		};
 		66244D002252D11436A1A48AD80E1E21 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RxSwift;
 			target = 0B93ECF31ABF753EE2D96F71B24CE026 /* RxSwift */;
 			targetProxy = 25594D6159CC065177BDCDA4F4A49DE4 /* PBXContainerItemProxy */;
+		};
+		82864EF387B4C37C4A5F7B7907F8B9DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealmSwift;
+			target = 3C61812C3B0A03FCC1D97E5525C3E7F0 /* RealmSwift */;
+			targetProxy = 4A34D9B5E71DEC9232F853181A0C4480 /* PBXContainerItemProxy */;
 		};
 		8736318A3DB40700C3DB67861F1D58A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3067,12 +3073,6 @@
 			name = Realm;
 			target = 1A53E501F99DFB3BA77AF40A7C6171D0 /* Realm */;
 			targetProxy = 2E146CBE76623DE7BEDF04BF2833AE47 /* PBXContainerItemProxy */;
-		};
-		9221446B2A330729AEB6A726CC5A43B5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RealmSwift;
-			target = 3C61812C3B0A03FCC1D97E5525C3E7F0 /* RealmSwift */;
-			targetProxy = CA7F8C591E2AEFB757C8436501B82529 /* PBXContainerItemProxy */;
 		};
 		9AA7410416AAE6CA61242C9F3F1F15F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3092,18 +3092,18 @@
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
 			targetProxy = D3B797454745F2DAE613CC59A5297BFC /* PBXContainerItemProxy */;
 		};
-		DE8390A5FCCCF90685466424ADDC98D6 /* PBXTargetDependency */ = {
+		F68AD0CB4DE75DC9E881FEC756372986 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
-			targetProxy = 9515D66B24A9EE1A3307E75CB10607E6 /* PBXContainerItemProxy */;
+			targetProxy = 5D5A360E1960DA4490B8CFEEC4F39BDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		06E41335643113E0E25FFFD60DD06146 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 527CAE52365FD0910BCC45300C26DE1B /* Pods-KekeRoom.release.xcconfig */;
+			baseConfigurationReference = B4AE5D4C1AE464D4D13170D37E4BBEFE /* Pods-KekeRoom.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3293,9 +3293,9 @@
 			};
 			name = Debug;
 		};
-		6DAEC7D6950797C7FACCD08A36236C0B /* Debug */ = {
+		3FEA4DD3E1E457DDF68C93D3165A983D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D4950B825879D7CB11284DF7535B489 /* Pods-KekeRoomWidget.debug.xcconfig */;
+			baseConfigurationReference = 006EDAB78FE1BEAB14CF4FBDE1C3FF6D /* Pods-kekeRoomWidget.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -3307,26 +3307,26 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KekeRoomWidget/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-kekeRoomWidget/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KekeRoomWidget/Pods-KekeRoomWidget.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-kekeRoomWidget/Pods-kekeRoomWidget.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KekeRoomWidget;
+				PRODUCT_NAME = Pods_kekeRoomWidget;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		6F9224530522DD3C735EC96CF142642E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -3380,41 +3380,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7AC229BCF58FF0B120923176334C48E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13FC17AB8B356012630D9DEE933D847E /* Pods-KekeRoomWidget.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KekeRoomWidget/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KekeRoomWidget/Pods-KekeRoomWidget.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KekeRoomWidget;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -3703,6 +3668,41 @@
 			};
 			name = Release;
 		};
+		EF99F795031907D3923567E2C4DD015F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44C4238B4634EFCB2E78B55039DE20A /* Pods-kekeRoomWidget.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-kekeRoomWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-kekeRoomWidget/Pods-kekeRoomWidget.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_kekeRoomWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F09B7C626BE76C7CB3638E6689E5A7A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7B722187D5146BFF5C53B524D7BCC25E /* RxSwift.xcconfig */;
@@ -3769,7 +3769,7 @@
 		};
 		F9615094AF34BC7096425D4B173F231E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E4E81CC489AE9EB87F956A4007B780D /* Pods-KekeRoom.debug.xcconfig */;
+			baseConfigurationReference = FA628E346753360702980F351CDC4B00 /* Pods-KekeRoom.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3804,15 +3804,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0849710514C32FEDBC093E90C7F794BA /* Build configuration list for PBXNativeTarget "Pods-KekeRoomWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DAEC7D6950797C7FACCD08A36236C0B /* Debug */,
-				7AC229BCF58FF0B120923176334C48E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		18CE779998919FBDAAD66C45733AC7ED /* Build configuration list for PBXNativeTarget "RealmSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3827,6 +3818,15 @@
 			buildConfigurations = (
 				2AD6C9ABB2E555A04FD094D6FAC041BA /* Debug */,
 				1B85F99F9BFBCEC4DD8349C21F2052A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279FBBAF81079AAE793B3F6627D27D25 /* Build configuration list for PBXNativeTarget "Pods-kekeRoomWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF99F795031907D3923567E2C4DD015F /* Debug */,
+				3FEA4DD3E1E457DDF68C93D3165A983D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

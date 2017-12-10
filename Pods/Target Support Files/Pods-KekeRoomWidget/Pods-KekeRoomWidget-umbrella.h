@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_KekeRoomWidgetVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_KekeRoomWidgetVersionString[];
+FOUNDATION_EXPORT double Pods_kekeRoomWidgetVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_kekeRoomWidgetVersionString[];
 

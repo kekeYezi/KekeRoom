@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_KekeRoomWidget : NSObject
+@interface PodsDummy_Pods_kekeRoomWidget : NSObject
 @end
-@implementation PodsDummy_Pods_KekeRoomWidget
+@implementation PodsDummy_Pods_kekeRoomWidget
 @end

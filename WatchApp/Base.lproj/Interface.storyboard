@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="RXz-03-ip9">
+                            <items>
+                                <imageView width="29" height="28" alignment="left" image="type_big_2" id="KRN-18-ART"/>
+                                <label width="24" height="27" alignment="left" text="   " id="bgr-9t-og8"/>
+                                <label width="57" height="27" alignment="left" text="用餐" id="e8l-4j-4u0"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="kPX-iI-7g8">
+                            <items>
+                                <label width="136" alignment="left" text="100" textAlignment="center" id="Nab-h2-BYy"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ftn-L0-so8"/>
+                        <group width="1" alignment="left" id="Fk1-xa-ERh">
+                            <items>
+                                <button width="1" alignment="left" title="添加" id="WG6-6C-rop"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

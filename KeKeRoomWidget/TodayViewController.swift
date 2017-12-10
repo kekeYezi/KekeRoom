@@ -29,13 +29,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.moneyField.text = "21"
+        
         let userDefault = UserDefaults.init(suiteName: "group.com.keke.kekeroom")
-        let widgetInfo:[NSMutableDictionary] = userDefault?.object(forKey: "widgetData")! as! [NSMutableDictionary]
-        
-        for obj in widgetInfo {
-           self.dataAry.append(obj)
+        let tmpAry = userDefault?.object(forKey: "widgetData")
+        if tmpAry != nil {
+            let widgetInfo:[NSMutableDictionary] = tmpAry as! [NSMutableDictionary]
+            
+            for obj in widgetInfo {
+                self.dataAry.append(obj)
+            }
         }
-        
+
         self.iconBtn.setImage(UIImage.init(named: "type_big_\(self.iconArrays[index])"), for: .normal)
         self.sunmaryLabel.text = self.sumarysArrays[index]
         

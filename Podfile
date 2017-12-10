@@ -13,7 +13,7 @@ target 'KekeRoom' do
   pod 'LeanCloud'
 end
 
-target 'KekeRoomWidget' do
+target 'kekeRoomWidget' do
     pod 'RealmSwift'
     pod 'LeanCloud'
 end
