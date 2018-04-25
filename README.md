@@ -4,4 +4,5 @@
 
 详情见gif
 
-https://github.com/kekeYezi/KekeRoom/blob/master/2018-04-25%2020_26_32.gif
+![](https://github.com/kekeYezi/KekeRoom/blob/master/2018-04-25%2020_26_32.gif)
+
